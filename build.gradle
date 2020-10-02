@@ -1,0 +1,32 @@
+plugins {
+    id 'idea'
+    id "io.spring.dependency-management" version "1.0.10.RELEASE"
+    id "com.github.johnrengelman.shadow" version "6.0.0" apply false
+}
+
+allprojects {
+    group 'ru.x0xdc.otus.java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: "io.spring.dependency-management"
+    dependencyManagement {
+        dependencies {
+            dependency("com.google.guava:guava:${Versions.guava}")
+        }
+    }
+}
+
+idea {
+    project {
+        languageLevel = 15
+    }
+
+    module {
+        downloadJavadoc = true
+        downloadSources = false
+    }
+}
+
