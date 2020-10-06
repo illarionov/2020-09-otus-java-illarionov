@@ -1,0 +1,18 @@
+plugins {
+    id 'java-platform'
+}
+
+javaPlatform {
+    allowDependencies()
+}
+
+dependencies {
+//    api platform('org.springframework.boot:spring-boot-dependencies:2.3.4.RELEASE')
+    api platform("org.junit:junit-bom:${Versions.junit}")
+    constraints {
+        api "com.google.guava:guava:${Versions.guava}"
+        api "org.mockito:mockito-core:${Versions.mockito}"
+        api "org.mockito:mockito-junit-jupiter:${Versions.mockito}"
+        api "org.assertj:assertj-core:${Versions.assertj}"
+    }
+}

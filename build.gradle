@@ -1,7 +1,14 @@
 plugins {
     id 'idea'
-    id "io.spring.dependency-management" version "1.0.10.RELEASE"
     id "com.github.johnrengelman.shadow" version "6.0.0" apply false
+}
+
+subprojects {
+    plugins.withType(JavaPlugin) { plugin ->
+        dependencies {
+            implementation platform(project(':platform'))
+        }
+    }
 }
 
 allprojects {
@@ -9,20 +16,6 @@ allprojects {
 
     repositories {
         mavenCentral()
-    }
-
-    apply plugin: "io.spring.dependency-management"
-    dependencyManagement {
-        dependencies {
-            imports {
-                //mavenBom("org.springframework.boot:spring-boot-dependencies:${Versions.springboot}")
-                mavenBom("org.junit:junit-bom:${Versions.junit}")
-            }
-            dependency("com.google.guava:guava:${Versions.guava}")
-            dependency("org.mockito:mockito-core:${Versions.mockito}")
-            dependency("org.mockito:mockito-junit-jupiter:${Versions.mockito}")
-            dependency("org.assertj:assertj-core:${Versions.assertj}")
-        }
     }
 }
 
