@@ -1,8 +1,23 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google() {
+            content {
+                includeGroupByRegex(/com\.(?:android|google)\..+/)
+            }
+        }
+    }
+    dependencies {
+        classpath 'com.guardsquare:proguard-gradle:7.0.0'
+    }
+}
+
 plugins {
     id 'idea'
     id "com.github.johnrengelman.shadow" version "6.0.0" apply false
     id 'org.springframework.boot' version '2.4.2' apply false
 }
+
 
 subprojects {
     plugins.withType(JavaPlugin) { plugin ->
@@ -17,6 +32,11 @@ allprojects {
 
     repositories {
         mavenCentral()
+        google() {
+            content {
+                includeGroupByRegex(/com\.(?:android|google)\..+/)
+            }
+        }
     }
 }
 

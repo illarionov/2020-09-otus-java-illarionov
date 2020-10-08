@@ -1,0 +1,24 @@
+-verbose
+
+#-dontobfuscate
+-allowaccessmodification
+-renamesourcefileattribute SourceFile
+-keepattributes SourceFile, LineNumberTable
+
+-repackageclasses ''
+
+-keep class ru.x0xdc.otus.java.HelloOtus {
+	public static void main(java.lang.String[]);
+}
+
+#proguard
+-dontwarn java.util.logging.**
+-dontwarn javax.lang.model.element.Modifier
+-dontwarn sun.misc.Unsafe
+
+-dontnote com.google.common.eventbus.Subscriber
+-dontnote com.google.common.reflect.**
+-dontnote com.google.common.util.concurrent.**
+-dontnote com.google.common.base.**
+-dontnote com.google.common.cache.**
+-dontnote com.google.common.hash.**

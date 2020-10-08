@@ -1,20 +1,27 @@
+import proguard.gradle.ProGuardTask
+
 plugins {
     id 'java'
 }
 
+configurations {
+    r8
+}
+
 version = "0.1"
 
-java {
+compileJava {
     archivesBaseName = "helloOtus"
-    sourceCompatibility = JavaVersion.VERSION_15
-    targetCompatibility = JavaVersion.VERSION_15
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 dependencies {
     implementation 'com.google.guava:guava'
+    r8 'com.android.tools:r8:2.1.67'
 }
 
-task uberJar(type: Jar) {
+def uberJar = tasks.register('uberJar', Jar) {
     dependsOn configurations.runtimeClasspath
     dependsOn tasks.jar
 
@@ -32,5 +39,45 @@ task uberJar(type: Jar) {
 
 }
 
-tasks.assemble.dependsOn tasks.uberJar
+def r8File = new File("$buildDir/libs/$archivesBaseName-r8.jar")
+def r8Jar = tasks.register('r8Jar', JavaExec) { task ->
+    task.dependsOn(configurations.named('runtimeClasspath'))
+    task.inputs.files(uberJar.map({it.outputs}))
+    task.outputs.file(r8File)
 
+    task.classpath(configurations.r8)
+    task.main = 'com.android.tools.r8.R8'
+    task.args = [
+            '--release',
+            '--classfile',
+            '--output', r8File.toString(),
+            '--pg-conf', 'src/main/proguard.txt',
+            '--lib', System.getProperty('java.home').toString()
+    ]
+    task.doFirst {
+        task.args += uberJar.get().archiveFile.get()
+    }
+}
+
+def proguardJar = tasks.register('proguardJar', ProGuardTask) {
+    def seedsDir = "$buildDir/proguard/"
+    outputs.dir(seedsDir)
+
+    //def java_home =  project.getProperty('JAVA11_HOME')
+
+    injars uberJar.map({it.outputs})
+    outjars "$buildDir/libs/$archivesBaseName-proguard.jar"
+    libraryjars "${System.getProperty('java.home')}/jmods/java.base.jmod", jarfilter: '!**.jar', filter: '!module-info.class'
+
+    configuration 'src/main/proguard.txt'
+
+    printseeds "$seedsDir/seeds.txt"
+    printmapping "$seedsDir/map.txt"
+    
+}
+
+tasks.named('assemble').configure {
+    dependsOn uberJar
+    dependsOn r8Jar
+    dependsOn proguardJar
+}
