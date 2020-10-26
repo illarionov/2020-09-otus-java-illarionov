@@ -10,3 +10,4 @@
 
  * [/hw01-gradle/](hw01-gradle/) проект gradle с модульной структурой
  * [/hw02-diyarraylist](hw02-diyarraylist/) реализация *ArrayList* на основе массива
+ * [/hw03-testrunner](hw03-testrunner/) свой тестовый фреймворк
