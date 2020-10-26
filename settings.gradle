@@ -2,4 +2,5 @@ rootProject.name = '2020-09-otus-java-illarionov'
 include 'platform'
 include 'hw01-gradle'
 include 'hw02-diyarraylist'
+include 'hw03-testrunner'
 
