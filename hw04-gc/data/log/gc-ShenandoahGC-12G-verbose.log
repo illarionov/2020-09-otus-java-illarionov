@@ -1,0 +1,688 @@
+[2020-11-04T21:22:00.118+0300][0.001s][info][gc] Min heap equals to max heap, disabling ShenandoahUncommit
+[2020-11-04T21:22:00.121+0300][0.005s][info][gc] Using Shenandoah
+[2020-11-04T21:22:00.121+0300][0.005s][info][gc] Heuristics ergonomically sets -XX:+ExplicitGCInvokesConcurrent
+[2020-11-04T21:22:00.121+0300][0.005s][info][gc] Heuristics ergonomically sets -XX:+ShenandoahImplicitGCInvokesConcurrent
+[2020-11-04T21:22:00.351+0300][0,235s][info][gc] Trigger: Explicit GC request (System.gc())
+[2020-11-04T21:22:00.351+0300][0,235s][info][gc] GC(0) Concurrent reset 0,238ms
+[2020-11-04T21:22:00.352+0300][0,235s][info][gc] GC(0) Pause Init Mark (process weakrefs) (unload classes) 0,358ms
+[2020-11-04T21:22:00.353+0300][0,237s][info][gc] GC(0) Concurrent marking (process weakrefs) (unload classes) 1,463ms
+[2020-11-04T21:22:00.353+0300][0,237s][info][gc] GC(0) Concurrent precleaning 0,109ms
+[2020-11-04T21:22:00.354+0300][0,237s][info][gc] GC(0) Pause Final Mark (process weakrefs) (unload classes) 0,323ms
+[2020-11-04T21:22:00.354+0300][0,238s][info][gc] GC(0) Concurrent weak roots 0,209ms
+[2020-11-04T21:22:00.354+0300][0,238s][info][gc] GC(0) Concurrent cleanup 12M->12M(12288M) 0,056ms
+[2020-11-04T21:22:00.355+0300][0,238s][info][gc] GC(0) Concurrent class unloading 0,454ms
+[2020-11-04T21:22:00.355+0300][0,239s][info][gc] GC(0) Concurrent strong roots 0,291ms
+[2020-11-04T21:22:00.357+0300][0,240s][info][gc] GC(0) Concurrent evacuation 1,605ms
+[2020-11-04T21:22:00.357+0300][0,240s][info][gc] GC(0) Pause Init Update Refs 0,019ms
+[2020-11-04T21:22:00.359+0300][0,243s][info][gc] GC(0) Concurrent update references 2,328ms
+[2020-11-04T21:22:00.359+0300][0,243s][info][gc] GC(0) Pause Final Update Refs 0,138ms
+[2020-11-04T21:22:00.359+0300][0,243s][info][gc] GC(0) Concurrent cleanup 15M->3M(12288M) 0,071ms
+[2020-11-04T21:22:00.361+0300][0,244s][info][gc] Trigger: Explicit GC request (System.gc())
+[2020-11-04T21:22:00.361+0300][0,245s][info][gc] GC(1) Concurrent reset 0,285ms
+[2020-11-04T21:22:00.361+0300][0,245s][info][gc] GC(1) Pause Init Mark (process weakrefs) (unload classes) 0,138ms
+[2020-11-04T21:22:00.363+0300][0,247s][info][gc] GC(1) Concurrent marking (process weakrefs) (unload classes) 1,668ms
+[2020-11-04T21:22:00.363+0300][0,247s][info][gc] GC(1) Concurrent precleaning 0,092ms
+[2020-11-04T21:22:00.364+0300][0,247s][info][gc] GC(1) Pause Final Mark (process weakrefs) (unload classes) 0,269ms
+[2020-11-04T21:22:00.364+0300][0,247s][info][gc] GC(1) Concurrent weak roots 0,260ms
+[2020-11-04T21:22:00.364+0300][0,248s][info][gc] GC(1) Concurrent cleanup 3M->3M(12288M) 0,049ms
+[2020-11-04T21:22:00.365+0300][0,248s][info][gc] GC(1) Concurrent class unloading 0,591ms
+[2020-11-04T21:22:00.365+0300][0,248s][info][gc] GC(1) Concurrent strong roots 0,301ms
+[2020-11-04T21:22:00.367+0300][0,251s][info][gc] GC(1) Concurrent evacuation 2,239ms
+[2020-11-04T21:22:00.367+0300][0,251s][info][gc] GC(1) Pause Init Update Refs 0,011ms
+[2020-11-04T21:22:00.369+0300][0,253s][info][gc] GC(1) Concurrent update references 1,990ms
+[2020-11-04T21:22:00.369+0300][0,253s][info][gc] GC(1) Pause Final Update Refs 0,130ms
+[2020-11-04T21:22:00.370+0300][0,253s][info][gc] GC(1) Concurrent cleanup 5M->2M(12288M) 0,058ms
+[2020-11-04T21:22:02.886+0300][2,770s][info][gc] Trigger: Learning 2 of 5. Free (8601M) is below initial threshold (8601M)
+[2020-11-04T21:22:02.886+0300][2,770s][info][gc] GC(2) Concurrent reset 0,269ms
+[2020-11-04T21:22:02.887+0300][2,771s][info][gc] GC(2) Pause Init Mark (unload classes) 0,311ms
+[2020-11-04T21:22:03.109+0300][2,993s][info][gc] GC(2) Concurrent marking (unload classes) 222,009ms
+[2020-11-04T21:22:03.110+0300][2,994s][info][gc] GC(2) Pause Final Mark (unload classes) 0,747ms
+[2020-11-04T21:22:03.111+0300][2,994s][info][gc] GC(2) Concurrent weak roots 0,376ms
+[2020-11-04T21:22:03.111+0300][2,994s][info][gc] GC(2) Concurrent cleanup 3362M->3362M(12288M) 0,037ms
+[2020-11-04T21:22:03.111+0300][2,995s][info][gc] GC(2) Concurrent class unloading 0,698ms
+[2020-11-04T21:22:03.111+0300][2,995s][info][gc] GC(2) Concurrent strong roots 0,069ms
+[2020-11-04T21:22:03.192+0300][3,076s][info][gc] GC(2) Concurrent evacuation 80,898ms
+[2020-11-04T21:22:03.193+0300][3,076s][info][gc] GC(2) Pause Init Update Refs 0,019ms
+[2020-11-04T21:22:03.287+0300][3,171s][info][gc] GC(2) Concurrent update references 94,639ms
+[2020-11-04T21:22:03.288+0300][3,171s][info][gc] GC(2) Pause Final Update Refs 0,274ms
+[2020-11-04T21:22:03.288+0300][3,172s][info][gc] GC(2) Concurrent cleanup 3674M->610M(12288M) 0,116ms
+[2020-11-04T21:22:04.253+0300][4,136s][info][gc] Trigger: Learning 3 of 5. Free (8601M) is below initial threshold (8601M)
+[2020-11-04T21:22:04.256+0300][4,140s][info][gc] GC(3) Concurrent reset 3,563ms
+[2020-11-04T21:22:04.257+0300][4,140s][info][gc] GC(3) Pause Init Mark (unload classes) 0,272ms
+[2020-11-04T21:22:04.354+0300][4,238s][info][gc] GC(3) Concurrent marking (unload classes) 97,575ms
+[2020-11-04T21:22:04.355+0300][4,239s][info][gc] GC(3) Pause Final Mark (unload classes) 0,678ms
+[2020-11-04T21:22:04.356+0300][4,239s][info][gc] GC(3) Concurrent weak roots 0,356ms
+[2020-11-04T21:22:04.356+0300][4,239s][info][gc] GC(3) Concurrent cleanup 3314M->3314M(12288M) 0,036ms
+[2020-11-04T21:22:04.356+0300][4,240s][info][gc] GC(3) Concurrent class unloading 0,701ms
+[2020-11-04T21:22:04.357+0300][4,240s][info][gc] GC(3) Concurrent strong roots 0,083ms
+[2020-11-04T21:22:04.449+0300][4,332s][info][gc] GC(3) Concurrent evacuation 91,989ms
+[2020-11-04T21:22:04.449+0300][4,332s][info][gc] GC(3) Pause Init Update Refs 0,018ms
+[2020-11-04T21:22:04.532+0300][4,416s][info][gc] GC(3) Concurrent update references 83,087ms
+[2020-11-04T21:22:04.533+0300][4,416s][info][gc] GC(3) Pause Final Update Refs 0,320ms
+[2020-11-04T21:22:04.533+0300][4,416s][info][gc] GC(3) Concurrent cleanup 3794M->730M(12288M) 0,128ms
+[2020-11-04T21:22:05.454+0300][5,338s][info][gc] Trigger: Learning 4 of 5. Free (8597M) is below initial threshold (8601M)
+[2020-11-04T21:22:05.458+0300][5,341s][info][gc] GC(4) Concurrent reset 3,442ms
+[2020-11-04T21:22:05.458+0300][5,342s][info][gc] GC(4) Pause Init Mark (unload classes) 0,251ms
+[2020-11-04T21:22:05.538+0300][5,421s][info][gc] GC(4) Concurrent marking (unload classes) 79,244ms
+[2020-11-04T21:22:05.539+0300][5,422s][info][gc] GC(4) Pause Final Mark (unload classes) 0,683ms
+[2020-11-04T21:22:05.539+0300][5,423s][info][gc] GC(4) Concurrent weak roots 0,381ms
+[2020-11-04T21:22:05.539+0300][5,423s][info][gc] GC(4) Concurrent cleanup 3266M->3266M(12288M) 0,037ms
+[2020-11-04T21:22:05.540+0300][5,424s][info][gc] GC(4) Concurrent class unloading 0,810ms
+[2020-11-04T21:22:05.540+0300][5,424s][info][gc] GC(4) Concurrent strong roots 0,082ms
+[2020-11-04T21:22:05.601+0300][5,484s][info][gc] GC(4) Concurrent evacuation 60,623ms
+[2020-11-04T21:22:05.601+0300][5,485s][info][gc] GC(4) Pause Init Update Refs 0,011ms
+[2020-11-04T21:22:05.668+0300][5,551s][info][gc] GC(4) Concurrent update references 66,663ms
+[2020-11-04T21:22:05.668+0300][5,552s][info][gc] GC(4) Pause Final Update Refs 0,216ms
+[2020-11-04T21:22:05.669+0300][5,552s][info][gc] GC(4) Concurrent cleanup 3626M->586M(12288M) 0,123ms
+[2020-11-04T21:22:06.648+0300][6,531s][info][gc] Trigger: Learning 5 of 5. Free (8597M) is below initial threshold (8601M)
+[2020-11-04T21:22:06.651+0300][6,535s][info][gc] GC(5) Concurrent reset 3,614ms
+[2020-11-04T21:22:06.652+0300][6,535s][info][gc] GC(5) Pause Init Mark (process weakrefs) (unload classes) 0,123ms
+[2020-11-04T21:22:06.719+0300][6,603s][info][gc] GC(5) Concurrent marking (process weakrefs) (unload classes) 67,330ms
+[2020-11-04T21:22:06.719+0300][6,603s][info][gc] GC(5) Concurrent precleaning 0,146ms
+[2020-11-04T21:22:06.720+0300][6,604s][info][gc] GC(5) Pause Final Mark (process weakrefs) (unload classes) 0,839ms
+[2020-11-04T21:22:06.721+0300][6,604s][info][gc] GC(5) Concurrent weak roots 0,328ms
+[2020-11-04T21:22:06.721+0300][6,604s][info][gc] GC(5) Concurrent cleanup 3249M->3249M(12288M) 0,036ms
+[2020-11-04T21:22:06.722+0300][6,605s][info][gc] GC(5) Concurrent class unloading 0,739ms
+[2020-11-04T21:22:06.722+0300][6,605s][info][gc] GC(5) Concurrent strong roots 0,083ms
+[2020-11-04T21:22:06.768+0300][6,651s][info][gc] GC(5) Concurrent evacuation 45,930ms
+[2020-11-04T21:22:06.768+0300][6,652s][info][gc] GC(5) Pause Init Update Refs 0,021ms
+[2020-11-04T21:22:06.828+0300][6,711s][info][gc] GC(5) Concurrent update references 59,472ms
+[2020-11-04T21:22:06.828+0300][6,712s][info][gc] GC(5) Pause Final Update Refs 0,165ms
+[2020-11-04T21:22:06.828+0300][6,712s][info][gc] GC(5) Concurrent cleanup 3549M->542M(12288M) 0,159ms
+[2020-11-04T21:22:13.039+0300][12,922s][info][gc] Trigger: Free (1225M) is below minimum threshold (1228M)
+[2020-11-04T21:22:13.042+0300][12,926s][info][gc] GC(6) Concurrent reset 3,013ms
+[2020-11-04T21:22:13.042+0300][12,926s][info][gc] GC(6) Pause Init Mark (unload classes) 0,186ms
+[2020-11-04T21:22:13.137+0300][13,020s][info][gc] GC(6) Concurrent marking (unload classes) 94,204ms
+[2020-11-04T21:22:13.138+0300][13,021s][info][gc] GC(6) Pause Final Mark (unload classes) 0,455ms
+[2020-11-04T21:22:13.138+0300][13,021s][info][gc] GC(6) Concurrent weak roots 0,295ms
+[2020-11-04T21:22:13.138+0300][13,022s][info][gc] GC(6) Concurrent cleanup 10546M->10546M(12288M) 0,042ms
+[2020-11-04T21:22:13.139+0300][13,022s][info][gc] GC(6) Concurrent class unloading 0,787ms
+[2020-11-04T21:22:13.139+0300][13,022s][info][gc] GC(6) Concurrent strong roots 0,066ms
+[2020-11-04T21:22:13.204+0300][13,088s][info][gc] GC(6) Concurrent evacuation 65,082ms
+[2020-11-04T21:22:13.204+0300][13,088s][info][gc] GC(6) Pause Init Update Refs 0,009ms
+[2020-11-04T21:22:13.255+0300][13,138s][info][gc] GC(6) Concurrent update references 50,761ms
+[2020-11-04T21:22:13.255+0300][13,139s][info][gc] GC(6) Pause Final Update Refs 0,301ms
+[2020-11-04T21:22:13.256+0300][13,139s][info][gc] GC(6) Concurrent cleanup 10829M->490M(12288M) 0,221ms
+[2020-11-04T21:22:17.138+0300][17,022s][info][gc] Trigger: Average GC time (258,77 ms) is above the time for allocation rate (2476 MB/s) to deplete free headroom (639M)
+[2020-11-04T21:22:17.150+0300][17,034s][info][gc] GC(7) Concurrent reset 11,815ms
+[2020-11-04T21:22:17.151+0300][17,034s][info][gc] GC(7) Pause Init Mark (unload classes) 0,190ms
+[2020-11-04T21:22:17.202+0300][17,086s][info][gc] GC(7) Concurrent marking (unload classes) 51,561ms
+[2020-11-04T21:22:17.203+0300][17,087s][info][gc] GC(7) Pause Final Mark (unload classes) 0,425ms
+[2020-11-04T21:22:17.203+0300][17,087s][info][gc] GC(7) Concurrent weak roots 0,315ms
+[2020-11-04T21:22:17.203+0300][17,087s][info][gc] GC(7) Concurrent cleanup 10562M->10562M(12288M) 0,037ms
+[2020-11-04T21:22:17.204+0300][17,088s][info][gc] GC(7) Concurrent class unloading 0,622ms
+[2020-11-04T21:22:17.204+0300][17,088s][info][gc] GC(7) Concurrent strong roots 0,095ms
+[2020-11-04T21:22:17.266+0300][17,150s][info][gc] GC(7) Concurrent evacuation 62,330ms
+[2020-11-04T21:22:17.267+0300][17,150s][info][gc] GC(7) Pause Init Update Refs 0,013ms
+[2020-11-04T21:22:17.305+0300][17,188s][info][gc] GC(7) Concurrent update references 37,663ms
+[2020-11-04T21:22:17.305+0300][17,189s][info][gc] GC(7) Pause Final Update Refs 0,160ms
+[2020-11-04T21:22:17.305+0300][17,189s][info][gc] GC(7) Concurrent cleanup 10854M->650M(12288M) 0,213ms
+[2020-11-04T21:22:21.134+0300][21,017s][info][gc] Trigger: Free (1225M) is below minimum threshold (1228M)
+[2020-11-04T21:22:21.145+0300][21,029s][info][gc] GC(8) Concurrent reset 11,678ms
+[2020-11-04T21:22:21.146+0300][21,029s][info][gc] GC(8) Pause Init Mark (unload classes) 0,110ms
+[2020-11-04T21:22:21.182+0300][21,065s][info][gc] GC(8) Concurrent marking (unload classes) 35,684ms
+[2020-11-04T21:22:21.182+0300][21,066s][info][gc] GC(8) Pause Final Mark (unload classes) 0,515ms
+[2020-11-04T21:22:21.183+0300][21,067s][info][gc] GC(8) Concurrent weak roots 0,419ms
+[2020-11-04T21:22:21.183+0300][21,067s][info][gc] GC(8) Concurrent cleanup 10554M->10554M(12288M) 0,039ms
+[2020-11-04T21:22:21.184+0300][21,067s][info][gc] GC(8) Concurrent class unloading 0,693ms
+[2020-11-04T21:22:21.184+0300][21,067s][info][gc] GC(8) Concurrent strong roots 0,048ms
+[2020-11-04T21:22:21.230+0300][21,113s][info][gc] GC(8) Concurrent evacuation 46,087ms
+[2020-11-04T21:22:21.230+0300][21,114s][info][gc] GC(8) Pause Init Update Refs 0,015ms
+[2020-11-04T21:22:21.255+0300][21,138s][info][gc] GC(8) Concurrent update references 24,477ms
+[2020-11-04T21:22:21.255+0300][21,139s][info][gc] GC(8) Pause Final Update Refs 0,292ms
+[2020-11-04T21:22:21.256+0300][21,139s][info][gc] GC(8) Concurrent cleanup 10806M->690M(12288M) 0,212ms
+[2020-11-04T21:22:25.057+0300][24,941s][info][gc] Trigger: Free (1225M) is below minimum threshold (1228M)
+[2020-11-04T21:22:25.069+0300][24,953s][info][gc] GC(9) Concurrent reset 11,829ms
+[2020-11-04T21:22:25.070+0300][24,953s][info][gc] GC(9) Pause Init Mark (unload classes) 0,282ms
+[2020-11-04T21:22:25.217+0300][25,101s][info][gc] GC(9) Concurrent marking (unload classes) 147,319ms
+[2020-11-04T21:22:25.218+0300][25,102s][info][gc] GC(9) Pause Final Mark (unload classes) 0,896ms
+[2020-11-04T21:22:25.219+0300][25,102s][info][gc] GC(9) Concurrent weak roots 0,440ms
+[2020-11-04T21:22:25.219+0300][25,102s][info][gc] GC(9) Concurrent cleanup 10802M->10802M(12288M) 0,048ms
+[2020-11-04T21:22:25.220+0300][25,103s][info][gc] GC(9) Concurrent class unloading 0,853ms
+[2020-11-04T21:22:25.220+0300][25,103s][info][gc] GC(9) Concurrent strong roots 0,075ms
+[2020-11-04T21:22:25.347+0300][25,230s][info][gc] GC(9) Concurrent evacuation 126,830ms
+[2020-11-04T21:22:25.347+0300][25,230s][info][gc] GC(9) Pause Init Update Refs 0,014ms
+[2020-11-04T21:22:25.457+0300][25,341s][info][gc] GC(9) Concurrent update references 110,157ms
+[2020-11-04T21:22:25.458+0300][25,341s][info][gc] GC(9) Pause Final Update Refs 0,398ms
+[2020-11-04T21:22:25.458+0300][25,342s][info][gc] GC(9) Concurrent cleanup 11322M->1310M(12288M) 0,280ms
+[2020-11-04T21:22:29.015+0300][28,899s][info][gc] Trigger: Free (1225M) is below minimum threshold (1228M)
+[2020-11-04T21:22:29.027+0300][28,911s][info][gc] GC(10) Concurrent reset 11,784ms
+[2020-11-04T21:22:29.028+0300][28,912s][info][gc] GC(10) Pause Init Mark (process weakrefs) (unload classes) 0,287ms
+[2020-11-04T21:22:29.221+0300][29,105s][info][gc] GC(10) Concurrent marking (process weakrefs) (unload classes) 193,075ms
+[2020-11-04T21:22:29.221+0300][29,105s][info][gc] GC(10) Concurrent precleaning 0,123ms
+[2020-11-04T21:22:29.222+0300][29,106s][info][gc] GC(10) Pause Final Mark (process weakrefs) (unload classes) 0,857ms
+[2020-11-04T21:22:29.223+0300][29,107s][info][gc] GC(10) Concurrent weak roots 0,334ms
+[2020-11-04T21:22:29.223+0300][29,107s][info][gc] GC(10) Concurrent cleanup 10934M->10934M(12288M) 0,038ms
+[2020-11-04T21:22:29.224+0300][29,107s][info][gc] GC(10) Concurrent class unloading 0,727ms
+[2020-11-04T21:22:29.224+0300][29,107s][info][gc] GC(10) Concurrent strong roots 0,083ms
+[2020-11-04T21:22:29.330+0300][29,214s][info][gc] GC(10) Concurrent evacuation 106,186ms
+[2020-11-04T21:22:29.330+0300][29,214s][info][gc] GC(10) Pause Init Update Refs 0,034ms
+[2020-11-04T21:22:29.445+0300][29,329s][info][gc] GC(10) Concurrent update references 114,483ms
+[2020-11-04T21:22:29.445+0300][29,329s][info][gc] GC(10) Pause Final Update Refs 0,165ms
+[2020-11-04T21:22:29.446+0300][29,329s][info][gc] GC(10) Concurrent cleanup 11550M->1622M(12288M) 0,208ms
+[2020-11-04T21:22:32.881+0300][32,765s][info][gc] Trigger: Average GC time (267,38 ms) is above the time for allocation rate (2500 MB/s) to deplete free headroom (667M)
+[2020-11-04T21:22:32.893+0300][32,776s][info][gc] GC(11) Concurrent reset 11,792ms
+[2020-11-04T21:22:32.893+0300][32,777s][info][gc] GC(11) Pause Init Mark (unload classes) 0,150ms
+[2020-11-04T21:22:33.000+0300][32,883s][info][gc] GC(11) Concurrent marking (unload classes) 106,170ms
+[2020-11-04T21:22:33.001+0300][32,884s][info][gc] GC(11) Pause Final Mark (unload classes) 0,639ms
+[2020-11-04T21:22:33.001+0300][32,885s][info][gc] GC(11) Concurrent weak roots 0,374ms
+[2020-11-04T21:22:33.001+0300][32,885s][info][gc] GC(11) Concurrent cleanup 10626M->10626M(12288M) 0,038ms
+[2020-11-04T21:22:33.002+0300][32,886s][info][gc] GC(11) Concurrent class unloading 0,905ms
+[2020-11-04T21:22:33.002+0300][32,886s][info][gc] GC(11) Concurrent strong roots 0,067ms
+[2020-11-04T21:22:33.086+0300][32,969s][info][gc] GC(11) Concurrent evacuation 83,479ms
+[2020-11-04T21:22:33.086+0300][32,970s][info][gc] GC(11) Pause Init Update Refs 0,024ms
+[2020-11-04T21:22:33.159+0300][33,043s][info][gc] GC(11) Concurrent update references 72,821ms
+[2020-11-04T21:22:33.159+0300][33,043s][info][gc] GC(11) Pause Final Update Refs 0,166ms
+[2020-11-04T21:22:33.160+0300][33,043s][info][gc] GC(11) Concurrent cleanup 11094M->1338M(12288M) 0,245ms
+[2020-11-04T21:22:36.705+0300][36,589s][info][gc] Trigger: Average GC time (279,75 ms) is above the time for allocation rate (2500 MB/s) to deplete free headroom (699M)
+[2020-11-04T21:22:36.717+0300][36,601s][info][gc] GC(12) Concurrent reset 11,745ms
+[2020-11-04T21:22:36.717+0300][36,601s][info][gc] GC(12) Pause Init Mark (unload classes) 0,104ms
+[2020-11-04T21:22:36.801+0300][36,685s][info][gc] GC(12) Concurrent marking (unload classes) 83,595ms
+[2020-11-04T21:22:36.802+0300][36,686s][info][gc] GC(12) Pause Final Mark (unload classes) 0,482ms
+[2020-11-04T21:22:36.802+0300][36,686s][info][gc] GC(12) Concurrent weak roots 0,303ms
+[2020-11-04T21:22:36.802+0300][36,686s][info][gc] GC(12) Concurrent cleanup 10562M->10562M(12288M) 0,037ms
+[2020-11-04T21:22:36.803+0300][36,687s][info][gc] GC(12) Concurrent class unloading 0,691ms
+[2020-11-04T21:22:36.803+0300][36,687s][info][gc] GC(12) Concurrent strong roots 0,075ms
+[2020-11-04T21:22:36.857+0300][36,740s][info][gc] GC(12) Concurrent evacuation 53,414ms
+[2020-11-04T21:22:36.857+0300][36,740s][info][gc] GC(12) Pause Init Update Refs 0,012ms
+[2020-11-04T21:22:36.904+0300][36,787s][info][gc] GC(12) Concurrent update references 46,926ms
+[2020-11-04T21:22:36.904+0300][36,788s][info][gc] GC(12) Pause Final Update Refs 0,151ms
+[2020-11-04T21:22:36.904+0300][36,788s][info][gc] GC(12) Concurrent cleanup 10882M->1270M(12288M) 0,200ms
+[2020-11-04T21:22:40.432+0300][40,315s][info][gc] Trigger: Average GC time (286,16 ms) is above the time for allocation rate (2539 MB/s) to deplete free headroom (723M)
+[2020-11-04T21:22:40.444+0300][40,327s][info][gc] GC(13) Concurrent reset 11,807ms
+[2020-11-04T21:22:40.444+0300][40,328s][info][gc] GC(13) Pause Init Mark (unload classes) 0,103ms
+[2020-11-04T21:22:40.599+0300][40,483s][info][gc] GC(13) Concurrent marking (unload classes) 154,952ms
+[2020-11-04T21:22:40.600+0300][40,484s][info][gc] GC(13) Pause Final Mark (unload classes) 0,612ms
+[2020-11-04T21:22:40.600+0300][40,484s][info][gc] GC(13) Concurrent weak roots 0,333ms
+[2020-11-04T21:22:40.601+0300][40,484s][info][gc] GC(13) Concurrent cleanup 10678M->10678M(12288M) 0,038ms
+[2020-11-04T21:22:40.601+0300][40,485s][info][gc] GC(13) Concurrent class unloading 0,762ms
+[2020-11-04T21:22:40.601+0300][40,485s][info][gc] GC(13) Concurrent strong roots 0,056ms
+[2020-11-04T21:22:40.713+0300][40,596s][info][gc] GC(13) Concurrent evacuation 111,248ms
+[2020-11-04T21:22:40.713+0300][40,597s][info][gc] GC(13) Pause Init Update Refs 0,021ms
+[2020-11-04T21:22:40.827+0300][40,711s][info][gc] GC(13) Concurrent update references 114,426ms
+[2020-11-04T21:22:40.828+0300][40,712s][info][gc] GC(13) Pause Final Update Refs 0,236ms
+[2020-11-04T21:22:40.828+0300][40,712s][info][gc] GC(13) Concurrent cleanup 11306M->1822M(12288M) 0,283ms
+[2020-11-04T21:22:44.101+0300][43,985s][info][gc] Trigger: Average GC time (341,08 ms) is above the time for allocation rate (2496 MB/s) to deplete free headroom (851M)
+[2020-11-04T21:22:44.113+0300][43,997s][info][gc] GC(14) Concurrent reset 11,744ms
+[2020-11-04T21:22:44.114+0300][43,998s][info][gc] GC(14) Pause Init Mark (unload classes) 0,296ms
+[2020-11-04T21:22:44.227+0300][44,111s][info][gc] GC(14) Concurrent marking (unload classes) 112,920ms
+[2020-11-04T21:22:44.228+0300][44,112s][info][gc] GC(14) Pause Final Mark (unload classes) 0,844ms
+[2020-11-04T21:22:44.229+0300][44,112s][info][gc] GC(14) Concurrent weak roots 0,382ms
+[2020-11-04T21:22:44.229+0300][44,112s][info][gc] GC(14) Concurrent cleanup 10498M->10498M(12288M) 0,037ms
+[2020-11-04T21:22:44.229+0300][44,113s][info][gc] GC(14) Concurrent class unloading 0,742ms
+[2020-11-04T21:22:44.229+0300][44,113s][info][gc] GC(14) Concurrent strong roots 0,057ms
+[2020-11-04T21:22:44.315+0300][44,198s][info][gc] GC(14) Concurrent evacuation 85,339ms
+[2020-11-04T21:22:44.315+0300][44,199s][info][gc] GC(14) Pause Init Update Refs 0,020ms
+[2020-11-04T21:22:44.400+0300][44,284s][info][gc] GC(14) Concurrent update references 84,847ms
+[2020-11-04T21:22:44.401+0300][44,284s][info][gc] GC(14) Pause Final Update Refs 0,307ms
+[2020-11-04T21:22:44.401+0300][44,285s][info][gc] GC(14) Concurrent cleanup 10982M->1710M(12288M) 0,205ms
+[2020-11-04T21:22:47.741+0300][47,625s][info][gc] Trigger: Average GC time (320,76 ms) is above the time for allocation rate (2512 MB/s) to deplete free headroom (803M)
+[2020-11-04T21:22:47.752+0300][47,635s][info][gc] GC(15) Concurrent reset 10,593ms
+[2020-11-04T21:22:47.752+0300][47,636s][info][gc] GC(15) Pause Init Mark (process weakrefs) (unload classes) 0,317ms
+[2020-11-04T21:22:47.942+0300][47,825s][info][gc] GC(15) Concurrent marking (process weakrefs) (unload classes) 189,012ms
+[2020-11-04T21:22:47.942+0300][47,825s][info][gc] GC(15) Concurrent precleaning 0,136ms
+[2020-11-04T21:22:47.943+0300][47,826s][info][gc] GC(15) Pause Final Mark (process weakrefs) (unload classes) 0,580ms
+[2020-11-04T21:22:47.943+0300][47,827s][info][gc] GC(15) Concurrent weak roots 0,356ms
+[2020-11-04T21:22:47.943+0300][47,827s][info][gc] GC(15) Concurrent cleanup 10702M->10702M(12288M) 0,035ms
+[2020-11-04T21:22:47.944+0300][47,828s][info][gc] GC(15) Concurrent class unloading 0,795ms
+[2020-11-04T21:22:47.944+0300][47,828s][info][gc] GC(15) Concurrent strong roots 0,086ms
+[2020-11-04T21:22:48.066+0300][47,950s][info][gc] GC(15) Concurrent evacuation 122,040ms
+[2020-11-04T21:22:48.066+0300][47,950s][info][gc] GC(15) Pause Init Update Refs 0,025ms
+[2020-11-04T21:22:48.213+0300][48,096s][info][gc] GC(15) Concurrent update references 146,487ms
+[2020-11-04T21:22:48.213+0300][48,097s][info][gc] GC(15) Pause Final Update Refs 0,177ms
+[2020-11-04T21:22:48.213+0300][48,097s][info][gc] GC(15) Concurrent cleanup 11394M->2198M(12288M) 0,199ms
+[2020-11-04T21:22:51.361+0300][51,244s][info][gc] Trigger: Average GC time (329,18 ms) is above the time for allocation rate (2478 MB/s) to deplete free headroom (815M)
+[2020-11-04T21:22:51.372+0300][51,256s][info][gc] GC(16) Concurrent reset 11,709ms
+[2020-11-04T21:22:51.373+0300][51,256s][info][gc] GC(16) Pause Init Mark (unload classes) 0,147ms
+[2020-11-04T21:22:51.529+0300][51,413s][info][gc] GC(16) Concurrent marking (unload classes) 156,513ms
+[2020-11-04T21:22:51.531+0300][51,414s][info][gc] GC(16) Pause Final Mark (unload classes) 0,830ms
+[2020-11-04T21:22:51.531+0300][51,415s][info][gc] GC(16) Concurrent weak roots 0,414ms
+[2020-11-04T21:22:51.531+0300][51,415s][info][gc] GC(16) Concurrent cleanup 10514M->10514M(12288M) 0,037ms
+[2020-11-04T21:22:51.532+0300][51,415s][info][gc] GC(16) Concurrent class unloading 0,617ms
+[2020-11-04T21:22:51.532+0300][51,415s][info][gc] GC(16) Concurrent strong roots 0,044ms
+[2020-11-04T21:22:51.627+0300][51,511s][info][gc] GC(16) Concurrent evacuation 95,253ms
+[2020-11-04T21:22:51.627+0300][51,511s][info][gc] GC(16) Pause Init Update Refs 0,022ms
+[2020-11-04T21:22:51.720+0300][51,604s][info][gc] GC(16) Concurrent update references 92,327ms
+[2020-11-04T21:22:51.721+0300][51,604s][info][gc] GC(16) Pause Final Update Refs 0,243ms
+[2020-11-04T21:22:51.721+0300][51,604s][info][gc] GC(16) Concurrent cleanup 11046M->1926M(12288M) 0,224ms
+[2020-11-04T21:22:54.965+0300][54,848s][info][gc] Trigger: Average GC time (345,50 ms) is above the time for allocation rate (2466 MB/s) to deplete free headroom (851M)
+[2020-11-04T21:22:54.976+0300][54,860s][info][gc] GC(17) Concurrent reset 11,660ms
+[2020-11-04T21:22:54.977+0300][54,861s][info][gc] GC(17) Pause Init Mark (unload classes) 0,135ms
+[2020-11-04T21:22:55.067+0300][54,951s][info][gc] GC(17) Concurrent marking (unload classes) 89,919ms
+[2020-11-04T21:22:55.068+0300][54,952s][info][gc] GC(17) Pause Final Mark (unload classes) 0,611ms
+[2020-11-04T21:22:55.068+0300][54,952s][info][gc] GC(17) Concurrent weak roots 0,321ms
+[2020-11-04T21:22:55.068+0300][54,952s][info][gc] GC(17) Concurrent cleanup 10434M->10434M(12288M) 0,034ms
+[2020-11-04T21:22:55.069+0300][54,953s][info][gc] GC(17) Concurrent class unloading 0,692ms
+[2020-11-04T21:22:55.069+0300][54,953s][info][gc] GC(17) Concurrent strong roots 0,066ms
+[2020-11-04T21:22:55.115+0300][54,999s][info][gc] GC(17) Concurrent evacuation 45,846ms
+[2020-11-04T21:22:55.115+0300][54,999s][info][gc] GC(17) Pause Init Update Refs 0,015ms
+[2020-11-04T21:22:55.175+0300][55,059s][info][gc] GC(17) Concurrent update references 59,559ms
+[2020-11-04T21:22:55.175+0300][55,059s][info][gc] GC(17) Pause Final Update Refs 0,151ms
+[2020-11-04T21:22:55.176+0300][55,059s][info][gc] GC(17) Concurrent cleanup 10762M->1794M(12288M) 0,175ms
+[2020-11-04T21:22:58.458+0300][58,342s][info][gc] Trigger: Average GC time (347,86 ms) is above the time for allocation rate (2524 MB/s) to deplete free headroom (875M)
+[2020-11-04T21:22:58.470+0300][58,353s][info][gc] GC(18) Concurrent reset 11,462ms
+[2020-11-04T21:22:58.470+0300][58,354s][info][gc] GC(18) Pause Init Mark (unload classes) 0,126ms
+[2020-11-04T21:22:58.627+0300][58,511s][info][gc] GC(18) Concurrent marking (unload classes) 157,009ms
+[2020-11-04T21:22:58.628+0300][58,512s][info][gc] GC(18) Pause Final Mark (unload classes) 0,538ms
+[2020-11-04T21:22:58.629+0300][58,512s][info][gc] GC(18) Concurrent weak roots 0,406ms
+[2020-11-04T21:22:58.629+0300][58,512s][info][gc] GC(18) Concurrent cleanup 10582M->10582M(12288M) 0,035ms
+[2020-11-04T21:22:58.629+0300][58,513s][info][gc] GC(18) Concurrent class unloading 0,580ms
+[2020-11-04T21:22:58.629+0300][58,513s][info][gc] GC(18) Concurrent strong roots 0,057ms
+[2020-11-04T21:22:58.722+0300][58,606s][info][gc] GC(18) Concurrent evacuation 92,959ms
+[2020-11-04T21:22:58.723+0300][58,606s][info][gc] GC(18) Pause Init Update Refs 0,012ms
+[2020-11-04T21:22:58.828+0300][58,712s][info][gc] GC(18) Concurrent update references 105,388ms
+[2020-11-04T21:22:58.829+0300][58,712s][info][gc] GC(18) Pause Final Update Refs 0,176ms
+[2020-11-04T21:22:58.829+0300][58,712s][info][gc] GC(18) Concurrent cleanup 11126M->2286M(12288M) 0,168ms
+[2020-11-04T21:23:01.943+0300][61,826s][info][gc] Trigger: Average GC time (342,68 ms) is above the time for allocation rate (2496 MB/s) to deplete free headroom (855M)
+[2020-11-04T21:23:01.954+0300][61,838s][info][gc] GC(19) Concurrent reset 11,402ms
+[2020-11-04T21:23:01.954+0300][61,838s][info][gc] GC(19) Pause Init Mark (unload classes) 0,131ms
+[2020-11-04T21:23:02.062+0300][61,945s][info][gc] GC(19) Concurrent marking (unload classes) 107,214ms
+[2020-11-04T21:23:02.062+0300][61,946s][info][gc] GC(19) Pause Final Mark (unload classes) 0,404ms
+[2020-11-04T21:23:02.063+0300][61,946s][info][gc] GC(19) Concurrent weak roots 0,342ms
+[2020-11-04T21:23:02.063+0300][61,946s][info][gc] GC(19) Concurrent cleanup 10438M->10438M(12288M) 0,038ms
+[2020-11-04T21:23:02.064+0300][61,947s][info][gc] GC(19) Concurrent class unloading 0,701ms
+[2020-11-04T21:23:02.064+0300][61,947s][info][gc] GC(19) Concurrent strong roots 0,087ms
+[2020-11-04T21:23:02.111+0300][61,994s][info][gc] GC(19) Concurrent evacuation 46,957ms
+[2020-11-04T21:23:02.111+0300][61,995s][info][gc] GC(19) Pause Init Update Refs 0,010ms
+[2020-11-04T21:23:02.177+0300][62,060s][info][gc] GC(19) Concurrent update references 65,737ms
+[2020-11-04T21:23:02.177+0300][62,061s][info][gc] GC(19) Pause Final Update Refs 0,141ms
+[2020-11-04T21:23:02.177+0300][62,061s][info][gc] GC(19) Concurrent cleanup 10786M->2006M(12288M) 0,239ms
+[2020-11-04T21:23:05.399+0300][65,283s][info][gc] Trigger: Average GC time (329,77 ms) is above the time for allocation rate (2511 MB/s) to deplete free headroom (827M)
+[2020-11-04T21:23:05.411+0300][65,295s][info][gc] GC(20) Concurrent reset 11,631ms
+[2020-11-04T21:23:05.411+0300][65,295s][info][gc] GC(20) Pause Init Mark (process weakrefs) (unload classes) 0,121ms
+[2020-11-04T21:23:05.589+0300][65,473s][info][gc] GC(20) Concurrent marking (process weakrefs) (unload classes) 177,345ms
+[2020-11-04T21:23:05.589+0300][65,473s][info][gc] GC(20) Concurrent precleaning 0,131ms
+[2020-11-04T21:23:05.590+0300][65,474s][info][gc] GC(20) Pause Final Mark (process weakrefs) (unload classes) 0,882ms
+[2020-11-04T21:23:05.591+0300][65,474s][info][gc] GC(20) Concurrent weak roots 0,353ms
+[2020-11-04T21:23:05.591+0300][65,474s][info][gc] GC(20) Concurrent cleanup 10514M->10514M(12288M) 0,036ms
+[2020-11-04T21:23:05.591+0300][65,475s][info][gc] GC(20) Concurrent class unloading 0,692ms
+[2020-11-04T21:23:05.591+0300][65,475s][info][gc] GC(20) Concurrent strong roots 0,084ms
+[2020-11-04T21:23:05.667+0300][65,550s][info][gc] GC(20) Concurrent evacuation 75,108ms
+[2020-11-04T21:23:05.667+0300][65,550s][info][gc] GC(20) Pause Init Update Refs 0,027ms
+[2020-11-04T21:23:05.759+0300][65,642s][info][gc] GC(20) Concurrent update references 91,757ms
+[2020-11-04T21:23:05.759+0300][65,643s][info][gc] GC(20) Pause Final Update Refs 0,212ms
+[2020-11-04T21:23:05.759+0300][65,643s][info][gc] GC(20) Concurrent cleanup 10986M->2298M(12288M) 0,228ms
+[2020-11-04T21:23:08.880+0300][68,764s][info][gc] Trigger: Average GC time (307,33 ms) is above the time for allocation rate (2473 MB/s) to deplete free headroom (759M)
+[2020-11-04T21:23:08.892+0300][68,775s][info][gc] GC(21) Concurrent reset 11,424ms
+[2020-11-04T21:23:08.892+0300][68,776s][info][gc] GC(21) Pause Init Mark (unload classes) 0,205ms
+[2020-11-04T21:23:09.105+0300][68,989s][info][gc] GC(21) Concurrent marking (unload classes) 213,036ms
+[2020-11-04T21:23:09.106+0300][68,989s][info][gc] GC(21) Pause Final Mark (unload classes) 0,473ms
+[2020-11-04T21:23:09.106+0300][68,990s][info][gc] GC(21) Concurrent weak roots 0,396ms
+[2020-11-04T21:23:09.106+0300][68,990s][info][gc] GC(21) Concurrent cleanup 10622M->10622M(12288M) 0,050ms
+[2020-11-04T21:23:09.107+0300][68,991s][info][gc] GC(21) Concurrent class unloading 0,662ms
+[2020-11-04T21:23:09.107+0300][68,991s][info][gc] GC(21) Concurrent strong roots 0,087ms
+[2020-11-04T21:23:09.219+0300][69,103s][info][gc] GC(21) Concurrent evacuation 111,822ms
+[2020-11-04T21:23:09.219+0300][69,103s][info][gc] GC(21) Pause Init Update Refs 0,019ms
+[2020-11-04T21:23:09.354+0300][69,237s][info][gc] GC(21) Concurrent update references 134,523ms
+[2020-11-04T21:23:09.354+0300][69,238s][info][gc] GC(21) Pause Final Update Refs 0,304ms
+[2020-11-04T21:23:09.355+0300][69,238s][info][gc] GC(21) Concurrent cleanup 11310M->2626M(12288M) 0,245ms
+[2020-11-04T21:23:12.334+0300][72,218s][info][gc] Trigger: Average GC time (330,21 ms) is above the time for allocation rate (2440 MB/s) to deplete free headroom (803M)
+[2020-11-04T21:23:12.346+0300][72,230s][info][gc] GC(22) Concurrent reset 11,677ms
+[2020-11-04T21:23:12.347+0300][72,230s][info][gc] GC(22) Pause Init Mark (unload classes) 0,227ms
+[2020-11-04T21:23:12.514+0300][72,398s][info][gc] GC(22) Concurrent marking (unload classes) 167,288ms
+[2020-11-04T21:23:12.515+0300][72,398s][info][gc] GC(22) Pause Final Mark (unload classes) 0,468ms
+[2020-11-04T21:23:12.515+0300][72,399s][info][gc] GC(22) Concurrent weak roots 0,374ms
+[2020-11-04T21:23:12.515+0300][72,399s][info][gc] GC(22) Concurrent cleanup 10602M->10602M(12288M) 0,038ms
+[2020-11-04T21:23:12.516+0300][72,400s][info][gc] GC(22) Concurrent class unloading 0,732ms
+[2020-11-04T21:23:12.516+0300][72,400s][info][gc] GC(22) Concurrent strong roots 0,096ms
+[2020-11-04T21:23:12.583+0300][72,466s][info][gc] GC(22) Concurrent evacuation 66,561ms
+[2020-11-04T21:23:12.583+0300][72,467s][info][gc] GC(22) Pause Init Update Refs 0,011ms
+[2020-11-04T21:23:12.671+0300][72,555s][info][gc] GC(22) Concurrent update references 88,047ms
+[2020-11-04T21:23:12.672+0300][72,555s][info][gc] GC(22) Pause Final Update Refs 0,219ms
+[2020-11-04T21:23:12.672+0300][72,555s][info][gc] GC(22) Concurrent cleanup 11054M->2498M(12288M) 0,167ms
+[2020-11-04T21:23:15.671+0300][75,554s][info][gc] Trigger: Average GC time (355,53 ms) is above the time for allocation rate (2494 MB/s) to deplete free headroom (883M)
+[2020-11-04T21:23:15.682+0300][75,565s][info][gc] GC(23) Concurrent reset 10,731ms
+[2020-11-04T21:23:15.682+0300][75,566s][info][gc] GC(23) Pause Init Mark (unload classes) 0,292ms
+[2020-11-04T21:23:15.873+0300][75,757s][info][gc] GC(23) Concurrent marking (unload classes) 190,748ms
+[2020-11-04T21:23:15.874+0300][75,758s][info][gc] GC(23) Pause Final Mark (unload classes) 0,548ms
+[2020-11-04T21:23:15.874+0300][75,758s][info][gc] GC(23) Concurrent weak roots 0,356ms
+[2020-11-04T21:23:15.874+0300][75,758s][info][gc] GC(23) Concurrent cleanup 10614M->10614M(12288M) 0,038ms
+[2020-11-04T21:23:15.875+0300][75,759s][info][gc] GC(23) Concurrent class unloading 0,673ms
+[2020-11-04T21:23:15.875+0300][75,759s][info][gc] GC(23) Concurrent strong roots 0,060ms
+[2020-11-04T21:23:15.963+0300][75,847s][info][gc] GC(23) Concurrent evacuation 87,869ms
+[2020-11-04T21:23:15.963+0300][75,847s][info][gc] GC(23) Pause Init Update Refs 0,014ms
+[2020-11-04T21:23:16.088+0300][75,972s][info][gc] GC(23) Concurrent update references 124,486ms
+[2020-11-04T21:23:16.089+0300][75,972s][info][gc] GC(23) Pause Final Update Refs 0,275ms
+[2020-11-04T21:23:16.089+0300][75,972s][info][gc] GC(23) Concurrent cleanup 11174M->2830M(12288M) 0,184ms
+[2020-11-04T21:23:18.948+0300][78,832s][info][gc] Trigger: Average GC time (365,01 ms) is above the time for allocation rate (2488 MB/s) to deplete free headroom (907M)
+[2020-11-04T21:23:18.960+0300][78,843s][info][gc] GC(24) Concurrent reset 11,505ms
+[2020-11-04T21:23:18.960+0300][78,844s][info][gc] GC(24) Pause Init Mark (unload classes) 0,376ms
+[2020-11-04T21:23:19.206+0300][79,089s][info][gc] GC(24) Concurrent marking (unload classes) 245,127ms
+[2020-11-04T21:23:19.206+0300][79,090s][info][gc] GC(24) Pause Final Mark (unload classes) 0,433ms
+[2020-11-04T21:23:19.207+0300][79,090s][info][gc] GC(24) Concurrent weak roots 0,321ms
+[2020-11-04T21:23:19.207+0300][79,090s][info][gc] GC(24) Concurrent cleanup 10706M->10706M(12288M) 0,039ms
+[2020-11-04T21:23:19.207+0300][79,091s][info][gc] GC(24) Concurrent class unloading 0,752ms
+[2020-11-04T21:23:19.208+0300][79,091s][info][gc] GC(24) Concurrent strong roots 0,100ms
+[2020-11-04T21:23:19.323+0300][79,206s][info][gc] GC(24) Concurrent evacuation 115,134ms
+[2020-11-04T21:23:19.323+0300][79,207s][info][gc] GC(24) Pause Init Update Refs 0,021ms
+[2020-11-04T21:23:19.490+0300][79,374s][info][gc] GC(24) Concurrent update references 166,759ms
+[2020-11-04T21:23:19.491+0300][79,374s][info][gc] GC(24) Pause Final Update Refs 0,309ms
+[2020-11-04T21:23:19.491+0300][79,374s][info][gc] GC(24) Concurrent cleanup 11442M->3178M(12288M) 0,177ms
+[2020-11-04T21:23:22.165+0300][82,049s][info][gc] Trigger: Average GC time (426,58 ms) is above the time for allocation rate (2458 MB/s) to deplete free headroom (1047M)
+[2020-11-04T21:23:22.177+0300][82,060s][info][gc] GC(25) Concurrent reset 11,592ms
+[2020-11-04T21:23:22.177+0300][82,061s][info][gc] GC(25) Pause Init Mark (process weakrefs) (unload classes) 0,133ms
+[2020-11-04T21:23:22.336+0300][82,219s][info][gc] GC(25) Concurrent marking (process weakrefs) (unload classes) 158,538ms
+[2020-11-04T21:23:22.336+0300][82,220s][info][gc] GC(25) Concurrent precleaning 0,136ms
+[2020-11-04T21:23:22.337+0300][82,220s][info][gc] GC(25) Pause Final Mark (process weakrefs) (unload classes) 0,409ms
+[2020-11-04T21:23:22.337+0300][82,221s][info][gc] GC(25) Concurrent weak roots 0,282ms
+[2020-11-04T21:23:22.337+0300][82,221s][info][gc] GC(25) Concurrent cleanup 10374M->10374M(12288M) 0,034ms
+[2020-11-04T21:23:22.338+0300][82,221s][info][gc] GC(25) Concurrent class unloading 0,649ms
+[2020-11-04T21:23:22.338+0300][82,221s][info][gc] GC(25) Concurrent strong roots 0,058ms
+[2020-11-04T21:23:22.396+0300][82,280s][info][gc] GC(25) Concurrent evacuation 58,412ms
+[2020-11-04T21:23:22.396+0300][82,280s][info][gc] GC(25) Pause Init Update Refs 0,011ms
+[2020-11-04T21:23:22.482+0300][82,366s][info][gc] GC(25) Concurrent update references 85,930ms
+[2020-11-04T21:23:22.483+0300][82,367s][info][gc] GC(25) Pause Final Update Refs 0,294ms
+[2020-11-04T21:23:22.483+0300][82,367s][info][gc] GC(25) Concurrent cleanup 10798M->2758M(12288M) 0,157ms
+[2020-11-04T21:23:25.320+0300][85,204s][info][gc] Trigger: Average GC time (418,21 ms) is above the time for allocation rate (2502 MB/s) to deplete free headroom (1043M)
+[2020-11-04T21:23:25.331+0300][85,215s][info][gc] GC(26) Concurrent reset 10,505ms
+[2020-11-04T21:23:25.332+0300][85,215s][info][gc] GC(26) Pause Init Mark (unload classes) 0,289ms
+[2020-11-04T21:23:25.558+0300][85,442s][info][gc] GC(26) Concurrent marking (unload classes) 226,755ms
+[2020-11-04T21:23:25.559+0300][85,443s][info][gc] GC(26) Pause Final Mark (unload classes) 0,558ms
+[2020-11-04T21:23:25.560+0300][85,443s][info][gc] GC(26) Concurrent weak roots 0,407ms
+[2020-11-04T21:23:25.560+0300][85,443s][info][gc] GC(26) Concurrent cleanup 10474M->10474M(12288M) 0,046ms
+[2020-11-04T21:23:25.561+0300][85,444s][info][gc] GC(26) Concurrent class unloading 0,812ms
+[2020-11-04T21:23:25.561+0300][85,444s][info][gc] GC(26) Concurrent strong roots 0,043ms
+[2020-11-04T21:23:25.631+0300][85,514s][info][gc] GC(26) Concurrent evacuation 70,102ms
+[2020-11-04T21:23:25.631+0300][85,515s][info][gc] GC(26) Pause Init Update Refs 0,022ms
+[2020-11-04T21:23:25.746+0300][85,629s][info][gc] GC(26) Concurrent update references 114,383ms
+[2020-11-04T21:23:25.746+0300][85,630s][info][gc] GC(26) Pause Final Update Refs 0,208ms
+[2020-11-04T21:23:25.746+0300][85,630s][info][gc] GC(26) Concurrent cleanup 10966M->3046M(12288M) 0,204ms
+[2020-11-04T21:23:28.482+0300][88,365s][info][gc] Trigger: Average GC time (408,49 ms) is above the time for allocation rate (2473 MB/s) to deplete free headroom (1007M)
+[2020-11-04T21:23:28.493+0300][88,376s][info][gc] GC(27) Concurrent reset 11,218ms
+[2020-11-04T21:23:28.493+0300][88,377s][info][gc] GC(27) Pause Init Mark (unload classes) 0,114ms
+[2020-11-04T21:23:28.728+0300][88,611s][info][gc] GC(27) Concurrent marking (unload classes) 234,415ms
+[2020-11-04T21:23:28.729+0300][88,613s][info][gc] GC(27) Pause Final Mark (unload classes) 0,803ms
+[2020-11-04T21:23:28.729+0300][88,613s][info][gc] GC(27) Concurrent weak roots 0,375ms
+[2020-11-04T21:23:28.729+0300][88,613s][info][gc] GC(27) Concurrent cleanup 10414M->10414M(12288M) 0,041ms
+[2020-11-04T21:23:28.730+0300][88,614s][info][gc] GC(27) Concurrent class unloading 0,660ms
+[2020-11-04T21:23:28.730+0300][88,614s][info][gc] GC(27) Concurrent strong roots 0,078ms
+[2020-11-04T21:23:28.821+0300][88,705s][info][gc] GC(27) Concurrent evacuation 90,696ms
+[2020-11-04T21:23:28.821+0300][88,705s][info][gc] GC(27) Pause Init Update Refs 0,015ms
+[2020-11-04T21:23:28.946+0300][88,830s][info][gc] GC(27) Concurrent update references 125,083ms
+[2020-11-04T21:23:28.947+0300][88,831s][info][gc] GC(27) Pause Final Update Refs 0,172ms
+[2020-11-04T21:23:28.947+0300][88,831s][info][gc] GC(27) Concurrent cleanup 11014M->3114M(12288M) 0,229ms
+[2020-11-04T21:23:31.641+0300][91,524s][info][gc] Trigger: Average GC time (434,12 ms) is above the time for allocation rate (2428 MB/s) to deplete free headroom (1051M)
+[2020-11-04T21:23:31.652+0300][91,535s][info][gc] GC(28) Concurrent reset 10,548ms
+[2020-11-04T21:23:31.652+0300][91,536s][info][gc] GC(28) Pause Init Mark (unload classes) 0,110ms
+[2020-11-04T21:23:31.890+0300][91,773s][info][gc] GC(28) Concurrent marking (unload classes) 237,752ms
+[2020-11-04T21:23:31.891+0300][91,774s][info][gc] GC(28) Pause Final Mark (unload classes) 0,502ms
+[2020-11-04T21:23:31.891+0300][91,775s][info][gc] GC(28) Concurrent weak roots 0,435ms
+[2020-11-04T21:23:31.891+0300][91,775s][info][gc] GC(28) Concurrent cleanup 10510M->10510M(12288M) 0,038ms
+[2020-11-04T21:23:31.892+0300][91,776s][info][gc] GC(28) Concurrent class unloading 0,783ms
+[2020-11-04T21:23:31.892+0300][91,776s][info][gc] GC(28) Concurrent strong roots 0,053ms
+[2020-11-04T21:23:31.997+0300][91,881s][info][gc] GC(28) Concurrent evacuation 105,234ms
+[2020-11-04T21:23:31.998+0300][91,881s][info][gc] GC(28) Pause Init Update Refs 0,021ms
+[2020-11-04T21:23:32.152+0300][92,036s][info][gc] GC(28) Concurrent update references 154,657ms
+[2020-11-04T21:23:32.153+0300][92,036s][info][gc] GC(28) Pause Final Update Refs 0,182ms
+[2020-11-04T21:23:32.153+0300][92,037s][info][gc] GC(28) Concurrent cleanup 11198M->3430M(12288M) 0,147ms
+[2020-11-04T21:23:34.695+0300][94,578s][info][gc] Trigger: Average GC time (452,95 ms) is above the time for allocation rate (2457 MB/s) to deplete free headroom (1111M)
+[2020-11-04T21:23:34.706+0300][94,590s][info][gc] GC(29) Concurrent reset 11,172ms
+[2020-11-04T21:23:34.706+0300][94,590s][info][gc] GC(29) Pause Init Mark (unload classes) 0,375ms
+[2020-11-04T21:23:34.843+0300][94,727s][info][gc] GC(29) Concurrent marking (unload classes) 136,731ms
+[2020-11-04T21:23:34.844+0300][94,728s][info][gc] GC(29) Pause Final Mark (unload classes) 0,524ms
+[2020-11-04T21:23:34.845+0300][94,728s][info][gc] GC(29) Concurrent weak roots 0,324ms
+[2020-11-04T21:23:34.845+0300][94,728s][info][gc] GC(29) Concurrent cleanup 10222M->10222M(12288M) 0,030ms
+[2020-11-04T21:23:34.845+0300][94,729s][info][gc] GC(29) Concurrent class unloading 0,842ms
+[2020-11-04T21:23:34.846+0300][94,729s][info][gc] GC(29) Concurrent strong roots 0,105ms
+[2020-11-04T21:23:34.884+0300][94,768s][info][gc] GC(29) Concurrent evacuation 38,508ms
+[2020-11-04T21:23:34.884+0300][94,768s][info][gc] GC(29) Pause Init Update Refs 0,010ms
+[2020-11-04T21:23:34.961+0300][94,845s][info][gc] GC(29) Concurrent update references 76,606ms
+[2020-11-04T21:23:34.961+0300][94,845s][info][gc] GC(29) Pause Final Update Refs 0,184ms
+[2020-11-04T21:23:34.962+0300][94,845s][info][gc] GC(29) Concurrent cleanup 10566M->2926M(12288M) 0,188ms
+[2020-11-04T21:23:37.755+0300][97,639s][info][gc] Trigger: Average GC time (397,79 ms) is above the time for allocation rate (2496 MB/s) to deplete free headroom (991M)
+[2020-11-04T21:23:37.767+0300][97,650s][info][gc] GC(30) Concurrent reset 11,350ms
+[2020-11-04T21:23:37.767+0300][97,651s][info][gc] GC(30) Pause Init Mark (process weakrefs) (unload classes) 0,347ms
+[2020-11-04T21:23:37.944+0300][97,828s][info][gc] GC(30) Concurrent marking (process weakrefs) (unload classes) 176,839ms
+[2020-11-04T21:23:37.945+0300][97,828s][info][gc] GC(30) Concurrent precleaning 0,138ms
+[2020-11-04T21:23:37.946+0300][97,829s][info][gc] GC(30) Pause Final Mark (process weakrefs) (unload classes) 0,853ms
+[2020-11-04T21:23:37.946+0300][97,830s][info][gc] GC(30) Concurrent weak roots 0,379ms
+[2020-11-04T21:23:37.946+0300][97,830s][info][gc] GC(30) Concurrent cleanup 10426M->10426M(12288M) 0,039ms
+[2020-11-04T21:23:37.947+0300][97,830s][info][gc] GC(30) Concurrent class unloading 0,693ms
+[2020-11-04T21:23:37.947+0300][97,831s][info][gc] GC(30) Concurrent strong roots 0,094ms
+[2020-11-04T21:23:37.991+0300][97,875s][info][gc] GC(30) Concurrent evacuation 43,909ms
+[2020-11-04T21:23:37.991+0300][97,875s][info][gc] GC(30) Pause Init Update Refs 0,014ms
+[2020-11-04T21:23:38.077+0300][97,960s][info][gc] GC(30) Concurrent update references 85,495ms
+[2020-11-04T21:23:38.077+0300][97,961s][info][gc] GC(30) Pause Final Update Refs 0,292ms
+[2020-11-04T21:23:38.078+0300][97,961s][info][gc] GC(30) Concurrent cleanup 10774M->3134M(12288M) 0,181ms
+[2020-11-04T21:23:40.788+0300][100,671s][info][gc] Trigger: Average GC time (398,61 ms) is above the time for allocation rate (2487 MB/s) to deplete free headroom (991M)
+[2020-11-04T21:23:40.799+0300][100,683s][info][gc] GC(31) Concurrent reset 11,436ms
+[2020-11-04T21:23:40.800+0300][100,683s][info][gc] GC(31) Pause Init Mark (unload classes) 0,323ms
+[2020-11-04T21:23:40.990+0300][100,874s][info][gc] GC(31) Concurrent marking (unload classes) 190,283ms
+[2020-11-04T21:23:40.991+0300][100,875s][info][gc] GC(31) Pause Final Mark (unload classes) 0,726ms
+[2020-11-04T21:23:40.992+0300][100,875s][info][gc] GC(31) Concurrent weak roots 0,449ms
+[2020-11-04T21:23:40.992+0300][100,875s][info][gc] GC(31) Concurrent cleanup 10386M->10386M(12288M) 0,039ms
+[2020-11-04T21:23:40.993+0300][100,876s][info][gc] GC(31) Concurrent class unloading 0,699ms
+[2020-11-04T21:23:40.993+0300][100,876s][info][gc] GC(31) Concurrent strong roots 0,045ms
+[2020-11-04T21:23:41.058+0300][100,941s][info][gc] GC(31) Concurrent evacuation 64,871ms
+[2020-11-04T21:23:41.058+0300][100,941s][info][gc] GC(31) Pause Init Update Refs 0,014ms
+[2020-11-04T21:23:41.153+0300][101,036s][info][gc] GC(31) Concurrent update references 94,588ms
+[2020-11-04T21:23:41.153+0300][101,037s][info][gc] GC(31) Pause Final Update Refs 0,361ms
+[2020-11-04T21:23:41.153+0300][101,037s][info][gc] GC(31) Concurrent cleanup 10822M->3250M(12288M) 0,211ms
+[2020-11-04T21:23:43.837+0300][103,721s][info][gc] Trigger: Average GC time (386,55 ms) is above the time for allocation rate (2457 MB/s) to deplete free headroom (947M)
+[2020-11-04T21:23:43.849+0300][103,732s][info][gc] GC(32) Concurrent reset 11,459ms
+[2020-11-04T21:23:43.849+0300][103,733s][info][gc] GC(32) Pause Init Mark (unload classes) 0,297ms
+[2020-11-04T21:23:44.066+0300][103,949s][info][gc] GC(32) Concurrent marking (unload classes) 216,412ms
+[2020-11-04T21:23:44.067+0300][103,950s][info][gc] GC(32) Pause Final Mark (unload classes) 0,658ms
+[2020-11-04T21:23:44.067+0300][103,951s][info][gc] GC(32) Concurrent weak roots 0,382ms
+[2020-11-04T21:23:44.067+0300][103,951s][info][gc] GC(32) Concurrent cleanup 10454M->10454M(12288M) 0,037ms
+[2020-11-04T21:23:44.068+0300][103,952s][info][gc] GC(32) Concurrent class unloading 0,782ms
+[2020-11-04T21:23:44.068+0300][103,952s][info][gc] GC(32) Concurrent strong roots 0,103ms
+[2020-11-04T21:23:44.135+0300][104,019s][info][gc] GC(32) Concurrent evacuation 66,897ms
+[2020-11-04T21:23:44.135+0300][104,019s][info][gc] GC(32) Pause Init Update Refs 0,015ms
+[2020-11-04T21:23:44.244+0300][104,128s][info][gc] GC(32) Concurrent update references 108,516ms
+[2020-11-04T21:23:44.244+0300][104,128s][info][gc] GC(32) Pause Final Update Refs 0,297ms
+[2020-11-04T21:23:44.245+0300][104,128s][info][gc] GC(32) Concurrent cleanup 10934M->3398M(12288M) 0,179ms
+[2020-11-04T21:23:46.885+0300][106,769s][info][gc] Trigger: Average GC time (374,94 ms) is above the time for allocation rate (2437 MB/s) to deplete free headroom (911M)
+[2020-11-04T21:23:46.896+0300][106,780s][info][gc] GC(33) Concurrent reset 11,468ms
+[2020-11-04T21:23:46.897+0300][106,781s][info][gc] GC(33) Pause Init Mark (unload classes) 0,292ms
+[2020-11-04T21:23:47.136+0300][107,020s][info][gc] GC(33) Concurrent marking (unload classes) 238,866ms
+[2020-11-04T21:23:47.137+0300][107,021s][info][gc] GC(33) Pause Final Mark (unload classes) 0,845ms
+[2020-11-04T21:23:47.138+0300][107,021s][info][gc] GC(33) Concurrent weak roots 0,380ms
+[2020-11-04T21:23:47.138+0300][107,021s][info][gc] GC(33) Concurrent cleanup 10506M->10506M(12288M) 0,038ms
+[2020-11-04T21:23:47.138+0300][107,022s][info][gc] GC(33) Concurrent class unloading 0,717ms
+[2020-11-04T21:23:47.139+0300][107,022s][info][gc] GC(33) Concurrent strong roots 0,105ms
+[2020-11-04T21:23:47.215+0300][107,099s][info][gc] GC(33) Concurrent evacuation 76,896ms
+[2020-11-04T21:23:47.216+0300][107,099s][info][gc] GC(33) Pause Init Update Refs 0,014ms
+[2020-11-04T21:23:47.336+0300][107,220s][info][gc] GC(33) Concurrent update references 120,335ms
+[2020-11-04T21:23:47.337+0300][107,220s][info][gc] GC(33) Pause Final Update Refs 0,194ms
+[2020-11-04T21:23:47.337+0300][107,221s][info][gc] GC(33) Concurrent cleanup 11042M->3542M(12288M) 0,176ms
+[2020-11-04T21:23:49.927+0300][109,811s][info][gc] Trigger: Average GC time (362,90 ms) is above the time for allocation rate (2423 MB/s) to deplete free headroom (879M)
+[2020-11-04T21:23:49.939+0300][109,822s][info][gc] GC(34) Concurrent reset 11,440ms
+[2020-11-04T21:23:49.939+0300][109,823s][info][gc] GC(34) Pause Init Mark (unload classes) 0,114ms
+[2020-11-04T21:23:50.197+0300][110,081s][info][gc] GC(34) Concurrent marking (unload classes) 257,965ms
+[2020-11-04T21:23:50.198+0300][110,082s][info][gc] GC(34) Pause Final Mark (unload classes) 0,595ms
+[2020-11-04T21:23:50.198+0300][110,082s][info][gc] GC(34) Concurrent weak roots 0,301ms
+[2020-11-04T21:23:50.198+0300][110,082s][info][gc] GC(34) Concurrent cleanup 10690M->10690M(12288M) 0,036ms
+[2020-11-04T21:23:50.199+0300][110,083s][info][gc] GC(34) Concurrent class unloading 0,648ms
+[2020-11-04T21:23:50.199+0300][110,083s][info][gc] GC(34) Concurrent strong roots 0,069ms
+[2020-11-04T21:23:50.285+0300][110,168s][info][gc] GC(34) Concurrent evacuation 85,643ms
+[2020-11-04T21:23:50.285+0300][110,169s][info][gc] GC(34) Pause Init Update Refs 0,024ms
+[2020-11-04T21:23:50.425+0300][110,308s][info][gc] GC(34) Concurrent update references 139,507ms
+[2020-11-04T21:23:50.425+0300][110,309s][info][gc] GC(34) Pause Final Update Refs 0,183ms
+[2020-11-04T21:23:50.426+0300][110,309s][info][gc] GC(34) Concurrent cleanup 11302M->3842M(12288M) 0,156ms
+[2020-11-04T21:23:52.857+0300][112,741s][info][gc] Trigger: Average GC time (409,20 ms) is above the time for allocation rate (2445 MB/s) to deplete free headroom (999M)
+[2020-11-04T21:23:52.869+0300][112,752s][info][gc] GC(35) Concurrent reset 11,439ms
+[2020-11-04T21:23:52.869+0300][112,753s][info][gc] GC(35) Pause Init Mark (process weakrefs) (unload classes) 0,146ms
+[2020-11-04T21:23:53.136+0300][113,019s][info][gc] GC(35) Concurrent marking (process weakrefs) (unload classes) 266,357ms
+[2020-11-04T21:23:53.136+0300][113,019s][info][gc] GC(35) Concurrent precleaning 0,138ms
+[2020-11-04T21:23:53.137+0300][113,020s][info][gc] GC(35) Pause Final Mark (process weakrefs) (unload classes) 0,549ms
+[2020-11-04T21:23:53.137+0300][113,021s][info][gc] GC(35) Concurrent weak roots 0,330ms
+[2020-11-04T21:23:53.137+0300][113,021s][info][gc] GC(35) Concurrent cleanup 10454M->10454M(12288M) 0,038ms
+[2020-11-04T21:23:53.138+0300][113,021s][info][gc] GC(35) Concurrent class unloading 0,663ms
+[2020-11-04T21:23:53.138+0300][113,021s][info][gc] GC(35) Concurrent strong roots 0,070ms
+[2020-11-04T21:23:53.224+0300][113,108s][info][gc] GC(35) Concurrent evacuation 86,342ms
+[2020-11-04T21:23:53.224+0300][113,108s][info][gc] GC(35) Pause Init Update Refs 0,022ms
+[2020-11-04T21:23:53.365+0300][113,249s][info][gc] GC(35) Concurrent update references 140,746ms
+[2020-11-04T21:23:53.366+0300][113,250s][info][gc] GC(35) Pause Final Update Refs 0,302ms
+[2020-11-04T21:23:53.366+0300][113,250s][info][gc] GC(35) Concurrent cleanup 11070M->3806M(12288M) 0,187ms
+[2020-11-04T21:23:55.787+0300][115,670s][info][gc] Trigger: Average GC time (446,55 ms) is above the time for allocation rate (2396 MB/s) to deplete free headroom (1067M)
+[2020-11-04T21:23:55.798+0300][115,682s][info][gc] GC(36) Concurrent reset 11,490ms
+[2020-11-04T21:23:55.799+0300][115,682s][info][gc] GC(36) Pause Init Mark (unload classes) 0,136ms
+[2020-11-04T21:23:56.069+0300][115,952s][info][gc] GC(36) Concurrent marking (unload classes) 269,617ms
+[2020-11-04T21:23:56.069+0300][115,953s][info][gc] GC(36) Pause Final Mark (unload classes) 0,470ms
+[2020-11-04T21:23:56.070+0300][115,953s][info][gc] GC(36) Concurrent weak roots 0,383ms
+[2020-11-04T21:23:56.070+0300][115,953s][info][gc] GC(36) Concurrent cleanup 10390M->10390M(12288M) 0,040ms
+[2020-11-04T21:23:56.071+0300][115,954s][info][gc] GC(36) Concurrent class unloading 0,712ms
+[2020-11-04T21:23:56.071+0300][115,954s][info][gc] GC(36) Concurrent strong roots 0,093ms
+[2020-11-04T21:23:56.160+0300][116,043s][info][gc] GC(36) Concurrent evacuation 88,815ms
+[2020-11-04T21:23:56.160+0300][116,043s][info][gc] GC(36) Pause Init Update Refs 0,023ms
+[2020-11-04T21:23:56.296+0300][116,180s][info][gc] GC(36) Concurrent update references 136,375ms
+[2020-11-04T21:23:56.297+0300][116,181s][info][gc] GC(36) Pause Final Update Refs 0,397ms
+[2020-11-04T21:23:56.297+0300][116,181s][info][gc] GC(36) Concurrent cleanup 10970M->3846M(12288M) 0,173ms
+[2020-11-04T21:23:58.672+0300][118,555s][info][gc] Trigger: Average GC time (475,50 ms) is above the time for allocation rate (2385 MB/s) to deplete free headroom (1131M)
+[2020-11-04T21:23:58.683+0300][118,567s][info][gc] GC(37) Concurrent reset 11,281ms
+[2020-11-04T21:23:58.683+0300][118,567s][info][gc] GC(37) Pause Init Mark (unload classes) 0,194ms
+[2020-11-04T21:23:58.947+0300][118,831s][info][gc] GC(37) Concurrent marking (unload classes) 263,421ms
+[2020-11-04T21:23:58.948+0300][118,831s][info][gc] GC(37) Pause Final Mark (unload classes) 0,473ms
+[2020-11-04T21:23:58.948+0300][118,832s][info][gc] GC(37) Concurrent weak roots 0,440ms
+[2020-11-04T21:23:58.948+0300][118,832s][info][gc] GC(37) Concurrent cleanup 10322M->10322M(12288M) 0,036ms
+[2020-11-04T21:23:58.949+0300][118,833s][info][gc] GC(37) Concurrent class unloading 0,714ms
+[2020-11-04T21:23:58.949+0300][118,833s][info][gc] GC(37) Concurrent strong roots 0,050ms
+[2020-11-04T21:23:59.031+0300][118,915s][info][gc] GC(37) Concurrent evacuation 81,730ms
+[2020-11-04T21:23:59.031+0300][118,915s][info][gc] GC(37) Pause Init Update Refs 0,014ms
+[2020-11-04T21:23:59.163+0300][119,047s][info][gc] GC(37) Concurrent update references 131,595ms
+[2020-11-04T21:23:59.163+0300][119,047s][info][gc] GC(37) Pause Final Update Refs 0,235ms
+[2020-11-04T21:23:59.164+0300][119,047s][info][gc] GC(37) Concurrent cleanup 10902M->3930M(12288M) 0,189ms
+[2020-11-04T21:24:01.499+0300][121,382s][info][gc] Trigger: Average GC time (492,40 ms) is above the time for allocation rate (2393 MB/s) to deplete free headroom (1175M)
+[2020-11-04T21:24:01.512+0300][121,396s][info][gc] GC(38) Concurrent reset 13,152ms
+[2020-11-04T21:24:01.512+0300][121,396s][info][gc] GC(38) Pause Init Mark (unload classes) 0,170ms
+[2020-11-04T21:24:01.781+0300][121,665s][info][gc] GC(38) Concurrent marking (unload classes) 268,593ms
+[2020-11-04T21:24:01.782+0300][121,665s][info][gc] GC(38) Pause Final Mark (unload classes) 0,488ms
+[2020-11-04T21:24:01.782+0300][121,666s][info][gc] GC(38) Concurrent weak roots 0,342ms
+[2020-11-04T21:24:01.782+0300][121,666s][info][gc] GC(38) Concurrent cleanup 10290M->10290M(12288M) 0,030ms
+[2020-11-04T21:24:01.783+0300][121,667s][info][gc] GC(38) Concurrent class unloading 0,694ms
+[2020-11-04T21:24:01.783+0300][121,667s][info][gc] GC(38) Concurrent strong roots 0,054ms
+[2020-11-04T21:24:01.859+0300][121,743s][info][gc] GC(38) Concurrent evacuation 76,360ms
+[2020-11-04T21:24:01.860+0300][121,743s][info][gc] GC(38) Pause Init Update Refs 0,013ms
+[2020-11-04T21:24:01.988+0300][121,872s][info][gc] GC(38) Concurrent update references 128,675ms
+[2020-11-04T21:24:01.989+0300][121,872s][info][gc] GC(38) Pause Final Update Refs 0,222ms
+[2020-11-04T21:24:01.989+0300][121,873s][info][gc] GC(38) Concurrent cleanup 10822M->3954M(12288M) 0,203ms
+[2020-11-04T21:24:04.308+0300][124,192s][info][gc] Trigger: Average GC time (500,08 ms) is above the time for allocation rate (2382 MB/s) to deplete free headroom (1191M)
+[2020-11-04T21:24:04.320+0300][124,203s][info][gc] GC(39) Concurrent reset 11,266ms
+[2020-11-04T21:24:04.320+0300][124,204s][info][gc] GC(39) Pause Init Mark (unload classes) 0,235ms
+[2020-11-04T21:24:04.594+0300][124,477s][info][gc] GC(39) Concurrent marking (unload classes) 273,187ms
+[2020-11-04T21:24:04.595+0300][124,478s][info][gc] GC(39) Pause Final Mark (unload classes) 0,801ms
+[2020-11-04T21:24:04.595+0300][124,479s][info][gc] GC(39) Concurrent weak roots 0,342ms
+[2020-11-04T21:24:04.595+0300][124,479s][info][gc] GC(39) Concurrent cleanup 10386M->10386M(12288M) 0,031ms
+[2020-11-04T21:24:04.596+0300][124,479s][info][gc] GC(39) Concurrent class unloading 0,831ms
+[2020-11-04T21:24:04.596+0300][124,480s][info][gc] GC(39) Concurrent strong roots 0,096ms
+[2020-11-04T21:24:04.662+0300][124,546s][info][gc] GC(39) Concurrent evacuation 66,403ms
+[2020-11-04T21:24:04.663+0300][124,546s][info][gc] GC(39) Pause Init Update Refs 0,013ms
+[2020-11-04T21:24:04.800+0300][124,684s][info][gc] GC(39) Concurrent update references 137,668ms
+[2020-11-04T21:24:04.801+0300][124,684s][info][gc] GC(39) Pause Final Update Refs 0,362ms
+[2020-11-04T21:24:04.801+0300][124,685s][info][gc] GC(39) Concurrent cleanup 10898M->4130M(12288M) 0,170ms
+[2020-11-04T21:24:07.049+0300][126,933s][info][gc] Trigger: Average GC time (498,90 ms) is above the time for allocation rate (2414 MB/s) to deplete free headroom (1203M)
+[2020-11-04T21:24:07.061+0300][126,944s][info][gc] GC(40) Concurrent reset 11,300ms
+[2020-11-04T21:24:07.061+0300][126,945s][info][gc] GC(40) Pause Init Mark (process weakrefs) (unload classes) 0,162ms
+[2020-11-04T21:24:07.285+0300][127,168s][info][gc] GC(40) Concurrent marking (process weakrefs) (unload classes) 223,648ms
+[2020-11-04T21:24:07.285+0300][127,168s][info][gc] GC(40) Concurrent precleaning 0,145ms
+[2020-11-04T21:24:07.286+0300][127,169s][info][gc] GC(40) Pause Final Mark (process weakrefs) (unload classes) 0,639ms
+[2020-11-04T21:24:07.286+0300][127,170s][info][gc] GC(40) Concurrent weak roots 0,340ms
+[2020-11-04T21:24:07.286+0300][127,170s][info][gc] GC(40) Concurrent cleanup 10226M->10226M(12288M) 0,042ms
+[2020-11-04T21:24:07.287+0300][127,171s][info][gc] GC(40) Concurrent class unloading 0,719ms
+[2020-11-04T21:24:07.287+0300][127,171s][info][gc] GC(40) Concurrent strong roots 0,059ms
+[2020-11-04T21:24:07.342+0300][127,225s][info][gc] GC(40) Concurrent evacuation 54,792ms
+[2020-11-04T21:24:07.342+0300][127,226s][info][gc] GC(40) Pause Init Update Refs 0,022ms
+[2020-11-04T21:24:07.450+0300][127,334s][info][gc] GC(40) Concurrent update references 107,972ms
+[2020-11-04T21:24:07.451+0300][127,334s][info][gc] GC(40) Pause Final Update Refs 0,204ms
+[2020-11-04T21:24:07.451+0300][127,334s][info][gc] GC(40) Concurrent cleanup 10666M->3990M(12288M) 0,201ms
+[2020-11-04T21:24:09.770+0300][129,654s][info][gc] Trigger: Average GC time (477,42 ms) is above the time for allocation rate (2424 MB/s) to deplete free headroom (1155M)
+[2020-11-04T21:24:09.781+0300][129,665s][info][gc] GC(41) Concurrent reset 11,156ms
+[2020-11-04T21:24:09.782+0300][129,665s][info][gc] GC(41) Pause Init Mark (unload classes) 0,116ms
+[2020-11-04T21:24:09.988+0300][129,872s][info][gc] GC(41) Concurrent marking (unload classes) 206,522ms
+[2020-11-04T21:24:09.989+0300][129,873s][info][gc] GC(41) Pause Final Mark (unload classes) 0,391ms
+[2020-11-04T21:24:09.989+0300][129,873s][info][gc] GC(41) Concurrent weak roots 0,362ms
+[2020-11-04T21:24:09.989+0300][129,873s][info][gc] GC(41) Concurrent cleanup 10262M->10262M(12288M) 0,038ms
+[2020-11-04T21:24:09.990+0300][129,874s][info][gc] GC(41) Concurrent class unloading 0,667ms
+[2020-11-04T21:24:09.990+0300][129,874s][info][gc] GC(41) Concurrent strong roots 0,042ms
+[2020-11-04T21:24:10.035+0300][129,919s][info][gc] GC(41) Concurrent evacuation 45,108ms
+[2020-11-04T21:24:10.036+0300][129,919s][info][gc] GC(41) Pause Init Update Refs 0,014ms
+[2020-11-04T21:24:10.133+0300][130,016s][info][gc] GC(41) Concurrent update references 97,084ms
+[2020-11-04T21:24:10.133+0300][130,017s][info][gc] GC(41) Pause Final Update Refs 0,210ms
+[2020-11-04T21:24:10.133+0300][130,017s][info][gc] GC(41) Concurrent cleanup 10622M->3966M(12288M) 0,196ms
+[2020-11-04T21:24:12.481+0300][132,365s][info][gc] Trigger: Average GC time (447,98 ms) is above the time for allocation rate (2439 MB/s) to deplete free headroom (1091M)
+[2020-11-04T21:24:12.493+0300][132,377s][info][gc] GC(42) Concurrent reset 11,966ms
+[2020-11-04T21:24:12.494+0300][132,377s][info][gc] GC(42) Pause Init Mark (unload classes) 0,160ms
+[2020-11-04T21:24:12.686+0300][132,569s][info][gc] GC(42) Concurrent marking (unload classes) 191,816ms
+[2020-11-04T21:24:12.687+0300][132,570s][info][gc] GC(42) Pause Final Mark (unload classes) 0,917ms
+[2020-11-04T21:24:12.687+0300][132,571s][info][gc] GC(42) Concurrent weak roots 0,435ms
+[2020-11-04T21:24:12.687+0300][132,571s][info][gc] GC(42) Concurrent cleanup 10298M->10298M(12288M) 0,057ms
+[2020-11-04T21:24:12.688+0300][132,572s][info][gc] GC(42) Concurrent class unloading 0,825ms
+[2020-11-04T21:24:12.688+0300][132,572s][info][gc] GC(42) Concurrent strong roots 0,070ms
+[2020-11-04T21:24:12.722+0300][132,606s][info][gc] GC(42) Concurrent evacuation 33,618ms
+[2020-11-04T21:24:12.722+0300][132,606s][info][gc] GC(42) Pause Init Update Refs 0,022ms
+[2020-11-04T21:24:12.809+0300][132,693s][info][gc] GC(42) Concurrent update references 87,161ms
+[2020-11-04T21:24:12.810+0300][132,693s][info][gc] GC(42) Pause Final Update Refs 0,152ms
+[2020-11-04T21:24:12.810+0300][132,694s][info][gc] GC(42) Concurrent cleanup 10606M->3962M(12288M) 0,131ms
+[2020-11-04T21:24:15.178+0300][135,062s][info][gc] Trigger: Average GC time (415,32 ms) is above the time for allocation rate (2455 MB/s) to deplete free headroom (1019M)
+[2020-11-04T21:24:15.191+0300][135,075s][info][gc] GC(43) Concurrent reset 13,115ms
+[2020-11-04T21:24:15.192+0300][135,076s][info][gc] GC(43) Pause Init Mark (unload classes) 0,283ms
+[2020-11-04T21:24:15.494+0300][135,377s][info][gc] GC(43) Concurrent marking (unload classes) 301,692ms
+[2020-11-04T21:24:15.495+0300][135,378s][info][gc] GC(43) Pause Final Mark (unload classes) 0,492ms
+[2020-11-04T21:24:15.495+0300][135,379s][info][gc] GC(43) Concurrent weak roots 0,373ms
+[2020-11-04T21:24:15.495+0300][135,379s][info][gc] GC(43) Concurrent cleanup 10634M->10634M(12288M) 0,038ms
+[2020-11-04T21:24:15.496+0300][135,380s][info][gc] GC(43) Concurrent class unloading 0,886ms
+[2020-11-04T21:24:15.496+0300][135,380s][info][gc] GC(43) Concurrent strong roots 0,085ms
+[2020-11-04T21:24:15.597+0300][135,480s][info][gc] GC(43) Concurrent evacuation 100,625ms
+[2020-11-04T21:24:15.597+0300][135,481s][info][gc] GC(43) Pause Init Update Refs 0,021ms
+[2020-11-04T21:24:15.779+0300][135,663s][info][gc] GC(43) Concurrent update references 181,970ms
+[2020-11-04T21:24:15.780+0300][135,663s][info][gc] GC(43) Pause Final Update Refs 0,173ms
+[2020-11-04T21:24:15.780+0300][135,663s][info][gc] GC(43) Concurrent cleanup 11346M->4698M(12288M) 0,151ms
+[2020-11-04T21:24:17.846+0300][137,730s][info][gc] Trigger: Average GC time (437,56 ms) is above the time for allocation rate (2413 MB/s) to deplete free headroom (1055M)
+[2020-11-04T21:24:17.857+0300][137,741s][info][gc] GC(44) Concurrent reset 11,340ms
+[2020-11-04T21:24:17.858+0300][137,741s][info][gc] GC(44) Pause Init Mark (unload classes) 0,250ms
+[2020-11-04T21:24:18.172+0300][138,055s][info][gc] GC(44) Concurrent marking (unload classes) 313,809ms
+[2020-11-04T21:24:18.173+0300][138,056s][info][gc] GC(44) Pause Final Mark (unload classes) 0,552ms
+[2020-11-04T21:24:18.173+0300][138,057s][info][gc] GC(44) Concurrent weak roots 0,372ms
+[2020-11-04T21:24:18.173+0300][138,057s][info][gc] GC(44) Concurrent cleanup 10434M->10434M(12288M) 0,038ms
+[2020-11-04T21:24:18.174+0300][138,057s][info][gc] GC(44) Concurrent class unloading 0,711ms
+[2020-11-04T21:24:18.174+0300][138,057s][info][gc] GC(44) Concurrent strong roots 0,071ms
+[2020-11-04T21:24:18.268+0300][138,151s][info][gc] GC(44) Concurrent evacuation 93,967ms
+[2020-11-04T21:24:18.268+0300][138,152s][info][gc] GC(44) Pause Init Update Refs 0,015ms
+[2020-11-04T21:24:18.423+0300][138,306s][info][gc] GC(44) Concurrent update references 154,478ms
+[2020-11-04T21:24:18.423+0300][138,307s][info][gc] GC(44) Pause Final Update Refs 0,230ms
+[2020-11-04T21:24:18.424+0300][138,307s][info][gc] GC(44) Concurrent cleanup 11078M->4526M(12288M) 0,141ms
+[2020-11-04T21:24:20.552+0300][140,435s][info][gc] Trigger: Average GC time (454,56 ms) is above the time for allocation rate (2350 MB/s) to deplete free headroom (1067M)
+[2020-11-04T21:24:20.563+0300][140,447s][info][gc] GC(45) Concurrent reset 11,271ms
+[2020-11-04T21:24:20.564+0300][140,447s][info][gc] GC(45) Pause Init Mark (process weakrefs) (unload classes) 0,129ms
+[2020-11-04T21:24:20.841+0300][140,725s][info][gc] GC(45) Concurrent marking (process weakrefs) (unload classes) 277,636ms
+[2020-11-04T21:24:20.842+0300][140,725s][info][gc] GC(45) Concurrent precleaning 0,156ms
+[2020-11-04T21:24:20.842+0300][140,726s][info][gc] GC(45) Pause Final Mark (process weakrefs) (unload classes) 0,464ms
+[2020-11-04T21:24:20.843+0300][140,726s][info][gc] GC(45) Concurrent weak roots 0,413ms
+[2020-11-04T21:24:20.843+0300][140,727s][info][gc] GC(45) Concurrent cleanup 10510M->10510M(12288M) 0,035ms
+[2020-11-04T21:24:20.844+0300][140,727s][info][gc] GC(45) Concurrent class unloading 0,822ms
+[2020-11-04T21:24:20.844+0300][140,727s][info][gc] GC(45) Concurrent strong roots 0,098ms
+[2020-11-04T21:24:20.923+0300][140,806s][info][gc] GC(45) Concurrent evacuation 78,812ms
+[2020-11-04T21:24:20.923+0300][140,807s][info][gc] GC(45) Pause Init Update Refs 0,013ms
+[2020-11-04T21:24:21.079+0300][140,963s][info][gc] GC(45) Concurrent update references 155,995ms
+[2020-11-04T21:24:21.080+0300][140,963s][info][gc] GC(45) Pause Final Update Refs 0,157ms
+[2020-11-04T21:24:21.080+0300][140,963s][info][gc] GC(45) Concurrent cleanup 11118M->4642M(12288M) 0,178ms
+[2020-11-04T21:24:23.141+0300][143,025s][info][gc] Trigger: Average GC time (479,82 ms) is above the time for allocation rate (2404 MB/s) to deplete free headroom (1151M)
+[2020-11-04T21:24:23.155+0300][143,038s][info][gc] GC(46) Concurrent reset 13,181ms
+[2020-11-04T21:24:23.155+0300][143,039s][info][gc] GC(46) Pause Init Mark (unload classes) 0,136ms
+[2020-11-04T21:24:23.405+0300][143,289s][info][gc] GC(46) Concurrent marking (unload classes) 249,793ms
+[2020-11-04T21:24:23.406+0300][143,289s][info][gc] GC(46) Pause Final Mark (unload classes) 0,599ms
+[2020-11-04T21:24:23.406+0300][143,290s][info][gc] GC(46) Concurrent weak roots 0,388ms
+[2020-11-04T21:24:23.406+0300][143,290s][info][gc] GC(46) Concurrent cleanup 10302M->10302M(12288M) 0,032ms
+[2020-11-04T21:24:23.407+0300][143,291s][info][gc] GC(46) Concurrent class unloading 0,771ms
+[2020-11-04T21:24:23.407+0300][143,291s][info][gc] GC(46) Concurrent strong roots 0,068ms
+[2020-11-04T21:24:23.466+0300][143,349s][info][gc] GC(46) Concurrent evacuation 58,391ms
+[2020-11-04T21:24:23.466+0300][143,349s][info][gc] GC(46) Pause Init Update Refs 0,015ms
+[2020-11-04T21:24:23.587+0300][143,471s][info][gc] GC(46) Concurrent update references 121,323ms
+[2020-11-04T21:24:23.588+0300][143,471s][info][gc] GC(46) Pause Final Update Refs 0,200ms
+[2020-11-04T21:24:23.588+0300][143,472s][info][gc] GC(46) Concurrent cleanup 10758M->4434M(12288M) 0,134ms
+[2020-11-04T21:24:25.728+0300][145,612s][info][gc] Trigger: Average GC time (496,52 ms) is above the time for allocation rate (2381 MB/s) to deplete free headroom (1179M)
+[2020-11-04T21:24:25.739+0300][145,623s][info][gc] GC(47) Concurrent reset 11,039ms
+[2020-11-04T21:24:25.740+0300][145,623s][info][gc] GC(47) Pause Init Mark (unload classes) 0,170ms
+[2020-11-04T21:24:25.957+0300][145,840s][info][gc] GC(47) Concurrent marking (unload classes) 216,825ms
+[2020-11-04T21:24:25.957+0300][145,841s][info][gc] GC(47) Pause Final Mark (unload classes) 0,467ms
+[2020-11-04T21:24:25.958+0300][145,841s][info][gc] GC(47) Concurrent weak roots 0,356ms
+[2020-11-04T21:24:25.958+0300][145,842s][info][gc] GC(47) Concurrent cleanup 10238M->10238M(12288M) 0,040ms
+[2020-11-04T21:24:25.959+0300][145,842s][info][gc] GC(47) Concurrent class unloading 0,756ms
+[2020-11-04T21:24:25.959+0300][145,842s][info][gc] GC(47) Concurrent strong roots 0,078ms
+[2020-11-04T21:24:25.994+0300][145,878s][info][gc] GC(47) Concurrent evacuation 35,591ms
+[2020-11-04T21:24:25.995+0300][145,878s][info][gc] GC(47) Pause Init Update Refs 0,021ms
+[2020-11-04T21:24:26.090+0300][145,974s][info][gc] GC(47) Concurrent update references 95,496ms
+[2020-11-04T21:24:26.091+0300][145,974s][info][gc] GC(47) Pause Final Update Refs 0,185ms
+[2020-11-04T21:24:26.091+0300][145,975s][info][gc] GC(47) Concurrent cleanup 10586M->4374M(12288M) 0,193ms
+[2020-11-04T21:24:27.152+0300][147,036s][info][gc] Cancelling GC: Stopping VM

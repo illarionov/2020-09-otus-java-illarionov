@@ -1,0 +1,29 @@
+PID: 3049333@alexey-PC
+VM spec: Java Virtual Machine Specification (Oracle Corporation) 15
+VM name: OpenJDK 64-Bit Server VM (Private Build) 15-ea+32-Ubuntu-220.04
+VM arguments: -Xms512M -Xmx512M -XX:+UseSerialGC -Xlog:gc:file=./logs/gc-SerialGC-512M-verbose.log:tags,uptime,time,level:filesize=1G
+Heap memory usage. Init: 512.00M, committed: 494.94M, max: 494.94M
+GC names: Copy, MarkSweepCompact
+new size:1000000
+[12061] Minute GC stats:
+GC: Copy;                                              Collections: 798; time: 16760 ms, min/avg/median/99pct/max: 0/21.00/22.00/24.00/25 ms
+GC: MarkSweepCompact;                                  Collections:  13; time:  2320 ms, min/avg/median/99pct/max: 115/178.46/189.00/209.04/210 ms
+[12062] Minute GC stats:
+GC: Copy;                                              Collections: 788; time: 16174 ms, min/avg/median/99pct/max: 0/20.53/21.00/25.00/47 ms
+GC: MarkSweepCompact;                                  Collections:  20; time:  4007 ms, min/avg/median/99pct/max: 139/200.35/186.00/256.62/257 ms
+[12063] Minute GC stats:
+GC: Copy;                                              Collections: 753; time: 14779 ms, min/avg/median/99pct/max: 0/19.63/21.00/24.00/43 ms
+GC: MarkSweepCompact;                                  Collections:  31; time:  7019 ms, min/avg/median/99pct/max: 190/226.42/228.00/265.60/271 ms
+[12063] Minute GC stats:
+GC: Copy;                                              Collections: 189; time:  3642 ms, min/avg/median/99pct/max: 0/19.27/21.00/23.12/25 ms
+GC: MarkSweepCompact;                                  Collections:  20; time:  5150 ms, min/avg/median/99pct/max: 191/257.50/273.00/328.87/334 ms
+Done: 100/100 test cycles
+GC stats from getGarbageCollectorMXBeans():
+GC: Copy;                Collections: 2528; time: 51347 ms, avg: 20.31 ms
+GC: MarkSweepCompact;    Collections:  84; time: 18488 ms, avg: 220.10 ms
+
+Time: 199,2127 sec
+Collected GC stats:
+GC: Copy (Allocation Failure);                         Collections: 2528; time: 51355 ms, min/avg/max: 0/20.31/47 ms
+GC: MarkSweepCompact (Allocation Failure);             Collections:  84; time: 18496 ms, min/avg/max: 115/220.19/334 ms
+Collections per minute: 786.70; Time per minute: 21.038 s (35.064%)

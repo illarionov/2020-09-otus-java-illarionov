@@ -4,4 +4,5 @@ public interface Versions {
     String assertj = "3.17.2";
     String mockito = "3.5.13";
     String springboot = "2.3.4.RELEASE";
+    String gson = "2.8.6";
 }
