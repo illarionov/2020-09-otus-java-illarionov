@@ -1,0 +1,25 @@
+PID: 3206725@alexey-PC
+VM spec: Java Virtual Machine Specification (Oracle Corporation) 15
+VM name: OpenJDK 64-Bit Server VM (Private Build) 15-ea+32-Ubuntu-220.04
+VM arguments: -Xms12G -Xmx12G -XX:+UseParallelGC -Xlog:gc:file=./logs/gc-ParallelGC-12G-verbose.log:tags,uptime,time,level:filesize=1G
+Heap memory usage. Init: 12288.00M, committed: 11776.00M, max: 11776.00M
+GC names: PS MarkSweep, PS Scavenge
+new size:1000000
+[12089] Minute GC stats:
+GC: PS MarkSweep;                                      Collections:   0; time:     0 ms, min/avg/median/99pct/max: 0/0.00/0.00/0.00/0 ms
+GC: PS Scavenge;                                       Collections:  45; time:  1792 ms, min/avg/median/99pct/max: 18/39.82/41.00/65.12/66 ms
+[12090] Minute GC stats:
+GC: PS MarkSweep;                                      Collections:   0; time:     0 ms, min/avg/median/99pct/max: 0/0.00/0.00/0.00/0 ms
+GC: PS Scavenge;                                       Collections:  45; time:  1851 ms, min/avg/median/99pct/max: 19/41.13/41.00/66.00/66 ms
+[12090] Minute GC stats:
+GC: PS MarkSweep;                                      Collections:   0; time:     0 ms, min/avg/median/99pct/max: 0/0.00/0.00/0.00/0 ms
+GC: PS Scavenge;                                       Collections:   5; time:   295 ms, min/avg/median/99pct/max: 50/59.00/58.00/66.88/67 ms
+Done: 100/100 test cycles
+GC stats from getGarbageCollectorMXBeans():
+GC: PS MarkSweep;        Collections:   0; time:     0 ms, avg:  0.00 ms
+GC: PS Scavenge;         Collections:  95; time:  3937 ms, avg: 41.44 ms
+
+Time: 125,6974 sec
+Collected GC stats:
+GC: PS Scavenge (Allocation Failure);                  Collections:  95; time:  3938 ms, min/avg/max: 18/41.45/67 ms
+Collections per minute: 45.35; Time per minute: 1.880 s (3.133%)

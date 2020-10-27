@@ -3,4 +3,5 @@ include 'platform'
 include 'hw01-gradle'
 include 'hw02-diyarraylist'
 include 'hw03-testrunner'
+include 'hw04-gc'
 

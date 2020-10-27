@@ -1,0 +1,26 @@
+PID: 3249795@alexey-PC
+VM spec: Java Virtual Machine Specification (Oracle Corporation) 15
+VM name: OpenJDK 64-Bit Server VM (Private Build) 15-ea+32-Ubuntu-220.04
+VM arguments: -Xms12G -Xmx12G -XX:+UseShenandoahGC -Xlog:gc:file=./logs/gc-ShenandoahGC-12G-verbose.log:tags,uptime,time,level:filesize=1G
+Heap memory usage. Init: 12288.00M, committed: 12288.00M, max: 12288.00M
+GC names: Shenandoah Cycles, Shenandoah Pauses
+new size:1000000
+[12100] Minute GC stats:
+GC: Shenandoah Cycles;                                 Collections:  17; time:  5005 ms, min/avg/median/99pct/max: 122/294.41/280.00/466.12/473 ms
+GC: Shenandoah Pauses;                                 Collections:  68; time:    25 ms, min/avg/median/99pct/max: 0/0.37/0.00/1.00/1 ms
+[12101] Minute GC stats:
+GC: Shenandoah Cycles;                                 Collections:  19; time:  7915 ms, min/avg/median/99pct/max: 235/416.58/426.00/537.42/543 ms
+GC: Shenandoah Pauses;                                 Collections:  76; time:    29 ms, min/avg/median/99pct/max: 0/0.38/0.00/1.00/1 ms
+[12101] Minute GC stats:
+GC: Shenandoah Cycles;                                 Collections:  10; time:  4595 ms, min/avg/median/99pct/max: 329/459.50/468.50/599.84/602 ms
+GC: Shenandoah Pauses;                                 Collections:  40; time:    11 ms, min/avg/median/99pct/max: 0/0.28/0.00/1.00/1 ms
+Done: 100/100 test cycles
+GC stats from getGarbageCollectorMXBeans():
+GC: Shenandoah Cycles;   Collections:  46; time: 17509 ms, avg: 380.63 ms
+GC: Shenandoah Pauses;   Collections: 184; time:    55 ms, avg:  0.30 ms
+
+Time: 146,7664 sec
+Collected GC stats:
+GC: Shenandoah Cycles (Concurrent GC);                 Collections:  46; time: 17515 ms, min/avg/max: 122/380.76/602 ms
+GC: Shenandoah Pauses (Concurrent GC);                 Collections: 184; time:    65 ms, min/avg/max: 0/0.35/1 ms
+Collections per minute: 94.03; Time per minute: 7.187 s (11.978%)

@@ -1,0 +1,38 @@
+PID: 3349413@alexey-PC
+VM spec: Java Virtual Machine Specification (Oracle Corporation) 15
+VM name: OpenJDK 64-Bit Server VM (Private Build) 15-ea+32-Ubuntu-220.04
+VM arguments: -Xms512M -Xmx512M -XX:+UseShenandoahGC -Xlog:gc:file=./logs/gc-ShenandoahGC-512M-verbose.log:tags,uptime,time,level:filesize=1G
+Heap memory usage. Init: 512.00M, committed: 512.00M, max: 512.00M
+GC names: Shenandoah Cycles, Shenandoah Pauses
+new size:1000000
+[12119] Minute GC stats:
+GC: Shenandoah Cycles;                                 Collections: 428; time: 34886 ms, min/avg/median/99pct/max: 22/81.51/82.50/136.19/194 ms
+GC: Shenandoah Pauses;                                 Collections: 1712; time:   449 ms, min/avg/median/99pct/max: 0/0.26/0.00/1.00/2 ms
+[12120] Minute GC stats:
+GC: Shenandoah Cycles;                                 Collections: 428; time: 46453 ms, min/avg/median/99pct/max: 53/108.54/109.00/155.73/195 ms
+GC: Shenandoah Pauses;                                 Collections: 1715; time:   460 ms, min/avg/median/99pct/max: 0/0.27/0.00/1.00/3 ms
+[12121] Minute GC stats:
+GC: Shenandoah Cycles;                                 Collections: 408; time: 53567 ms, min/avg/median/99pct/max: 80/131.29/132.00/184.86/230 ms
+GC: Shenandoah Pauses;                                 Collections: 1630; time:   447 ms, min/avg/median/99pct/max: 0/0.27/0.00/1.00/2 ms
+[12122] Minute GC stats:
+GC: Shenandoah Cycles;                                 Collections: 384; time: 57360 ms, min/avg/median/99pct/max: 94/149.38/151.00/216.17/257 ms
+GC: Shenandoah Pauses;                                 Collections: 1536; time:   410 ms, min/avg/median/99pct/max: 0/0.27/0.00/1.00/2 ms
+[12123] Minute GC stats:
+GC: Shenandoah Cycles;                                 Collections: 368; time: 58737 ms, min/avg/median/99pct/max: 108/159.61/160.00/212.00/260 ms
+GC: Shenandoah Pauses;                                 Collections: 1474; time:   367 ms, min/avg/median/99pct/max: 0/0.25/0.00/1.00/2 ms
+[12124] Minute GC stats:
+GC: Shenandoah Cycles;                                 Collections: 353; time: 59244 ms, min/avg/median/99pct/max: 123/167.83/168.00/211.48/214 ms
+GC: Shenandoah Pauses;                                 Collections: 1412; time:   370 ms, min/avg/median/99pct/max: 0/0.26/0.00/1.00/2 ms
+[12124] Minute GC stats:
+GC: Shenandoah Cycles;                                 Collections:  60; time: 10633 ms, min/avg/median/99pct/max: 136/177.22/177.50/223.00/223 ms
+GC: Shenandoah Pauses;                                 Collections: 240; time:    75 ms, min/avg/median/99pct/max: 0/0.31/0.00/1.00/2 ms
+Done: 100/100 test cycles
+GC stats from getGarbageCollectorMXBeans():
+GC: Shenandoah Cycles;   Collections: 2429; time: 320903 ms, avg: 132.11 ms
+GC: Shenandoah Pauses;   Collections: 9719; time:  2525 ms, avg:  0.26 ms
+
+Time: 370,7125 sec
+Collected GC stats:
+GC: Shenandoah Cycles (Concurrent GC);                 Collections: 2429; time: 320880 ms, min/avg/max: 22/132.10/260 ms
+GC: Shenandoah Pauses (Concurrent GC);                 Collections: 9719; time:  2578 ms, min/avg/max: 0/0.27/3 ms
+Collections per minute: 1966.16; Time per minute: 52.352 s (87.253%)

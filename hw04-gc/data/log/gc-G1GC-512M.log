@@ -1,0 +1,27 @@
+PID: 3003701@alexey-PC
+VM spec: Java Virtual Machine Specification (Oracle Corporation) 15
+VM name: OpenJDK 64-Bit Server VM (Private Build) 15-ea+32-Ubuntu-220.04
+VM arguments: -Xms512M -Xmx512M -XX:+UseG1GC -Xlog:gc:file=./logs/gc-G1GC-512M-verbose.log:tags,uptime,time,level:filesize=1G
+Heap memory usage. Init: 512.00M, committed: 512.00M, max: 512.00M
+GC names: G1 Old Generation, G1 Young Generation
+new size:1000000
+[12054] Minute GC stats:
+GC: G1 Old Generation;                                 Collections:   0; time:     0 ms, min/avg/median/99pct/max: 0/0.00/0.00/0.00/0 ms
+GC: G1 Young Generation;                               Collections: 574; time:  7661 ms, min/avg/median/99pct/max: 1/13.35/14.00/19.00/22 ms
+[12055] Minute GC stats:
+GC: G1 Old Generation;                                 Collections:   0; time:     0 ms, min/avg/median/99pct/max: 0/0.00/0.00/0.00/0 ms
+GC: G1 Young Generation;                               Collections: 755; time:  7738 ms, min/avg/median/99pct/max: 4/10.25/10.00/16.00/19 ms
+[12055] Minute GC stats:
+GC: G1 Old Generation;                                 Collections:   0; time:     0 ms, min/avg/median/99pct/max: 0/0.00/0.00/0.00/0 ms
+GC: G1 Young Generation;                               Collections: 554; time:  4011 ms, min/avg/median/99pct/max: 4/7.24/7.00/11.00/12 ms
+Done: 100/100 test cycles
+GC stats from getGarbageCollectorMXBeans():
+GC: G1 Old Generation;   Collections:   0; time:     0 ms, avg:  0.00 ms
+GC: G1 Young Generation; Collections: 1883; time: 19405 ms, avg: 10.31 ms
+
+Time: 149,3169 sec
+Collected GC stats:
+GC: G1 Young Generation (G1 Evacuation Pause);         Collections: 1847; time: 19011 ms, min/avg/max: 1/10.29/22 ms
+GC: G1 Young Generation (G1 Humongous Allocation);     Collections:  36; time:   399 ms, min/avg/max: 6/11.08/16 ms
+GC: G1 Young Generation (Total);                       Collections: 1883; time: 19410 ms, min/avg/max: 1/10.31/22 ms
+Collections per minute: 756.65; Time per minute: 7.800 s (12.999%)
