@@ -8,6 +8,8 @@ public final class Change {
 
     private final Map<Denomination, Integer> quantities;
 
+    private transient int numNotes = -1;
+
     private static final Change EMPTY = new Change(Collections.emptyMap());
 
     public static Change empty() {
@@ -33,7 +35,18 @@ public final class Change {
     public Map<Denomination, Integer> getQuantities() {
         return quantities;
     }
-    
+
+    public int getNumNotes() {
+        if (numNotes == -1) {
+           numNotes = quantities.values().stream().mapToInt(Integer::intValue).sum();
+        }
+        return numNotes;
+    }
+
+    public ChangeBuilder toBuilder() {
+        return new ChangeBuilder(this);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -53,11 +66,16 @@ public final class Change {
     }
 
 
+
     public static final class ChangeBuilder {
         private Map<Denomination, Integer> quantities;
 
         private ChangeBuilder() {
             quantities = new EnumMap<>(Denomination.class);
+        }
+
+        private ChangeBuilder(Change other) {
+            quantities = other.quantities.isEmpty() ? new EnumMap<>(Denomination.class) : new EnumMap<>(other.quantities);
         }
 
         public ChangeBuilder rub5(int quantity) {
@@ -113,6 +131,12 @@ public final class Change {
                     this.quantities.put(entry.getKey(), entry.getValue());
                 }
             }
+            return this;
+        }
+
+        public ChangeBuilder add(Denomination denomination, int numNotes) {
+            if (numNotes == 0) return this;
+            quantities.merge(denomination, numNotes, Integer::sum);
             return this;
         }
 
