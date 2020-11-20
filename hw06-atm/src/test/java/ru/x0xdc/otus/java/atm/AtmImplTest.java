@@ -2,7 +2,6 @@ package ru.x0xdc.otus.java.atm;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 import ru.x0xdc.otus.java.atm.model.Banknote;
 import ru.x0xdc.otus.java.atm.model.Change;
 import ru.x0xdc.otus.java.atm.model.Result;
@@ -11,8 +10,6 @@ import ru.x0xdc.otus.java.atm.model.Status;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 class AtmImplTest {
 
@@ -45,22 +42,6 @@ class AtmImplTest {
     }
 
     @Test
-    void withdrawShouldCallMoneyVaultWithdraw() {
-        MoneyVault moneyVault = mock(MoneyVault.class);
-        DispensingStrategy strategy = mock(DispensingStrategy.class);
-
-        Change change = Change.builder().rub100(1).build();
-        when(strategy.calculateDispense(Mockito.any(), Mockito.anyInt())).thenReturn(change);
-        when(moneyVault.dispense(change)).thenReturn(Result.success(List.of(Banknote.of(100))));
-
-        Atm atm = new AtmImpl(strategy, moneyVault);
-
-        atm.withdraw(100);
-
-        Mockito.verify(moneyVault).dispense(Mockito.any());
-    }
-
-    @Test
     @DisplayName("deposit() возвращает верный результат")
     void depositShouldWork() {
         Atm atm = new AtmImpl();
@@ -69,20 +50,6 @@ class AtmImplTest {
 
         assertThat(result.getStatus())
                 .isEqualTo(Status.SUCCESS);
-    }
-
-    @Test
-    void depositShouldCallMoneyVaultWithdraw() {
-        MoneyVault moneyVault = mock(MoneyVault.class);
-        DispensingStrategy strategy = mock(DispensingStrategy.class);
-
-        when(moneyVault.deposit(Mockito.anyList())).thenReturn(Result.success(Change.empty()));
-
-        Atm atm = new AtmImpl(strategy, moneyVault);
-
-        atm.withdraw(100);
-
-        Mockito.verify(moneyVault).dispense(Mockito.any());
     }
 
     @Test

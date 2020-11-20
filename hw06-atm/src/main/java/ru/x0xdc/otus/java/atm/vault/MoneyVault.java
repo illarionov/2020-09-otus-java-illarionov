@@ -1,4 +1,4 @@
-package ru.x0xdc.otus.java.atm;
+package ru.x0xdc.otus.java.atm.vault;
 
 import ru.x0xdc.otus.java.atm.model.*;
 
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-class MoneyVault {
+public class MoneyVault {
 
     private final Map<Denomination, Cassette> cassettes;
 
@@ -25,7 +25,7 @@ class MoneyVault {
         }
     }
 
-    public Result<List<Banknote>> dispense(Change change) {
+    Result<List<Banknote>> dispenseCommand(Change change) {
         List<Banknote> result = new ArrayList<>();
         for (var denomination: change.getDenominations()) {
             int quantity = change.getQuantity(denomination);
@@ -38,7 +38,7 @@ class MoneyVault {
         return Result.success(result);
     }
 
-    public Result<Change> deposit(List<Banknote> banknotes) {
+    Result<Change> depositCommand(List<Banknote> banknotes) {
         Map<Denomination, Integer> quantities = banknotes
                 .stream()
                 .collect(Collectors.groupingBy(Banknote::getDenomination, Collectors.summingInt(b -> 1)));

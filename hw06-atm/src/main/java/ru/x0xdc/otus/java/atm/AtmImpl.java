@@ -4,6 +4,10 @@ import ru.x0xdc.otus.java.atm.model.Banknote;
 import ru.x0xdc.otus.java.atm.model.Change;
 import ru.x0xdc.otus.java.atm.model.Result;
 import ru.x0xdc.otus.java.atm.model.Status;
+import ru.x0xdc.otus.java.atm.vault.Command;
+import ru.x0xdc.otus.java.atm.vault.DepositCommand;
+import ru.x0xdc.otus.java.atm.vault.DispenseCommand;
+import ru.x0xdc.otus.java.atm.vault.MoneyVault;
 
 import java.util.Collections;
 import java.util.List;
@@ -45,7 +49,7 @@ public class AtmImpl implements Atm {
             return Result.failed(e);
         }
 
-        return moneyVault.dispense(toDispense);
+        return executeCommand(new DispenseCommand(moneyVault, toDispense));
     }
 
     @Override
@@ -55,8 +59,12 @@ public class AtmImpl implements Atm {
             return Result.success(null);
         }
 
-        Result<Change> result = moneyVault.deposit(banknotes);
+        Result<Change> result = executeCommand(new DepositCommand(moneyVault, banknotes));
         return result.getStatus() == Status.SUCCESS ? Result.success(null) : Result.failed(result.getError());
+    }
+
+    private <R> Result<R> executeCommand(Command<R> command) {
+        return command.execute();
     }
 
     @Override
