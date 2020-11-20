@@ -1,0 +1,77 @@
+@startuml
+
+title Диаграмма классов ATM
+
+interface Atm {
+    withdraw(int amount): Result<List<Banknote>>
+    deposit(List<Banknote> banknotes)
+    getAvailableBalance(): int
+}
+
+class Banknote {
+    -denomination: Denomination
+    getDenomination(): Denomination
+}
+
+enum Denomination {
+    RUB5
+    RUB10
+    RUB50
+    RUB100
+    RUB200
+    RUB500
+    RUB1000
+    RUB2000
+    RUB5000
+
+    getAmount(): int
+}
+
+abstract class Result<T> {
+    -result: T
+    -error: Throwable
+    getStatus(): Status
+    getResult(): T
+    getError(): Throwable
+}
+
+enum Status {
+    SUCCESS
+    ERROR
+}
+
+class AtmImpl implements Atm {
+    -Map<Denomination, Cassette> cassettes
+    -DispensingStrategy dispensingStrategy
+}
+
+class Cassette {
+    getDenomination(): Denomination
+    getQuantity(): int
+    setQuantity(int quantity)
+    addNotes(int quantity)
+    removeNotes(int quantity)
+}
+
+interface DispensingStrategy {
+    Map<Denomination, Count> calculateDispense(Map<Denomination, Cassette> cassettes, int amount) throws DispenseException
+}
+
+class MinimalNotesDispensingStrategy implements DispensingStrategy {
+}
+
+class DispenseException {
+}
+
+
+Atm -  Banknote
+Banknote o-> "1" Denomination
+
+Result -> Status
+Atm -- Result
+AtmImpl *--> Cassette
+AtmImpl *-> "1" DispensingStrategy
+DispensingStrategy - DispenseException
+DispenseException --|> Exception
+
+@enduml
