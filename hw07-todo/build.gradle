@@ -22,13 +22,13 @@ dependencies {
 test {
     useJUnitPlatform()
     testLogging {
-        events "passed", "skipped", "failed"
+        // events "passed", "skipped", "failed"
     }
 }
 
 jar {
     manifest {
-        attributes 'Main-Class': 'ru.otus.Demo'
+        attributes 'Main-Class': 'ru.otus.HomeWork'
     }
 }
 
