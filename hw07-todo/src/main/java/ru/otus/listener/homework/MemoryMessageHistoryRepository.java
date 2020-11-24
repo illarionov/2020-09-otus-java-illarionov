@@ -35,7 +35,9 @@ public class MemoryMessageHistoryRepository implements MessageHistoryRepository 
     public void logMessage(Message oldMessage, Message newMessage) {
         MessageLogRecord record = new MessageLogRecord(timeProvider.get(), oldMessage, newMessage);
 
-        while (log.size() >= maxSize) log.removeFirst();
+        while (log.size() >= maxSize) {
+            log.removeFirst();
+        }
 
         log.add(record);
     }
