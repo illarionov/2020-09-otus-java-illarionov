@@ -20,8 +20,8 @@ public final class MessageLogRecord {
     public MessageLogRecord(Instant timestamp, Message oldMessage, Message newMessage) {
         Objects.requireNonNull(timestamp);
         this.timestamp = timestamp;
-        this.oldMessage = oldMessage;
-        this.newMessage = newMessage;
+        this.oldMessage = oldMessage != null ? oldMessage.toBuilder().build() : null;
+        this.newMessage = newMessage != null ? newMessage.toBuilder().build() : null;
     }
 
     public Instant getTimestamp() {
@@ -34,19 +34,6 @@ public final class MessageLogRecord {
 
     public Message getNewMessage() {
         return newMessage;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        MessageLogRecord that = (MessageLogRecord) o;
-        return timestamp.equals(that.timestamp) && Objects.equals(oldMessage, that.oldMessage) && Objects.equals(newMessage, that.newMessage);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(timestamp, oldMessage, newMessage);
     }
 
     @Override
