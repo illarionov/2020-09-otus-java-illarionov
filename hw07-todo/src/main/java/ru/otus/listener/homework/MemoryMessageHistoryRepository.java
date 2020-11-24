@@ -6,6 +6,7 @@ import ru.otus.processor.homework.TimeProvider;
 import java.time.Instant;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class MemoryMessageHistoryRepository implements MessageHistoryRepository {
 
@@ -44,7 +45,10 @@ public class MemoryMessageHistoryRepository implements MessageHistoryRepository 
 
     @Override
     public List<MessageLogRecord> getLastMessages(int count) {
-        return List.copyOf(log.subList(Math.max(log.size() - count, 0), log.size()));
+        return log.subList(Math.max(log.size() - count, 0), log.size())
+                .stream()
+                .map(MessageLogRecord::new)
+                .collect(Collectors.toUnmodifiableList());
     }
 
     @Override

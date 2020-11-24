@@ -17,6 +17,10 @@ public final class MessageLogRecord {
         this(Instant.now(), oldMessage, newMessage);
     }
 
+    public MessageLogRecord(MessageLogRecord other) {
+        this(other.getTimestamp(), other.oldMessage, other.newMessage);
+    }
+
     public MessageLogRecord(Instant timestamp, Message oldMessage, Message newMessage) {
         Objects.requireNonNull(timestamp);
         this.timestamp = timestamp;
