@@ -1,11 +1,11 @@
 package ru.otus.listener.homework;
 
 import ru.otus.Message;
+import ru.otus.processor.homework.TimeProvider;
 
 import java.time.Instant;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.function.Supplier;
 
 public class MemoryMessageHistoryRepository implements MessageHistoryRepository {
 
@@ -15,7 +15,7 @@ public class MemoryMessageHistoryRepository implements MessageHistoryRepository 
 
     private final int maxSize;
 
-    private final Supplier<Instant> timeProvider;
+    private final TimeProvider timeProvider;
 
     public MemoryMessageHistoryRepository() {
         this(DEFAULT_MAX_SIZE);
@@ -25,7 +25,7 @@ public class MemoryMessageHistoryRepository implements MessageHistoryRepository 
         this(maxSize, Instant::now);
     }
 
-    MemoryMessageHistoryRepository(int maxSize, Supplier<Instant> timeProvider) {
+    MemoryMessageHistoryRepository(int maxSize, TimeProvider timeProvider) {
         log = new LinkedList<>();
         this.maxSize = maxSize;
         this.timeProvider = timeProvider;

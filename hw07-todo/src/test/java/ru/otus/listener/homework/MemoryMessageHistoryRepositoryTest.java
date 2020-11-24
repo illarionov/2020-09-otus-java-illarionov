@@ -4,11 +4,11 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.otus.Message;
 import ru.otus.ObjectForMessage;
+import ru.otus.processor.homework.TimeProvider;
 
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Supplier;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -17,7 +17,7 @@ class MemoryMessageHistoryRepositoryTest {
     @Test
     @DisplayName("Логирование работает корректно")
     void logMessageShouldWorkCorrectly() {
-        Supplier<Instant> instantProvider = () -> Instant.parse("2020-11-22T10:00:00.00Z");
+        TimeProvider instantProvider = () -> Instant.parse("2020-11-22T10:00:00.00Z");
         MemoryMessageHistoryRepository repository = new MemoryMessageHistoryRepository(1, instantProvider);
 
         Message oldMessage = new Message.Builder(42)

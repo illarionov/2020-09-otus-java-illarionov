@@ -5,7 +5,6 @@ import ru.otus.Message;
 import ru.otus.processor.Processor;
 
 import java.time.Instant;
-import java.util.function.Supplier;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -23,7 +22,7 @@ class FaultyProcessorTest {
             }
         };
 
-        Supplier<Instant> oddSecond = () -> Instant.parse("2020-11-21T11:11:11.00Z");
+        TimeProvider oddSecond = () -> Instant.parse("2020-11-21T11:11:11.00Z");
 
         Processor testProcessor = new FaultyProcessor(srcProcessor, oddSecond);
 
@@ -44,7 +43,7 @@ class FaultyProcessorTest {
             }
         };
 
-        Supplier<Instant> evenSecond = () -> Instant.parse("2020-11-21T11:11:10.00Z");
+        TimeProvider evenSecond = () -> Instant.parse("2020-11-21T11:11:10.00Z");
 
         Processor testProcessor = new FaultyProcessor(srcProcessor, evenSecond);
 

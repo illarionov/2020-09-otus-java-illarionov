@@ -4,19 +4,18 @@ import ru.otus.Message;
 import ru.otus.processor.Processor;
 
 import java.time.Instant;
-import java.util.function.Supplier;
 
 public class FaultyProcessor implements Processor {
 
     private final Processor processor;
 
-    private final Supplier<Instant> timeProvider;
+    private final TimeProvider timeProvider;
 
     public FaultyProcessor(Processor processor) {
         this(processor, Instant::now);
     }
 
-    public FaultyProcessor(Processor processor, Supplier<Instant> timeProvider) {
+    public FaultyProcessor(Processor processor, TimeProvider timeProvider) {
         this.processor = processor;
         this.timeProvider = timeProvider;
     }
