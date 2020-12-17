@@ -15,4 +15,5 @@
  * [/hw05-aop](hw05-aop/) автоматическое логирование (АОП)
  * [/hw06-atm](hw06-atm/) эмулятор банкомата
  * [/hw07-todo](hw07-todo/) обработчик сообщений
+ * [/hw08-json](hw08-json/) свой JSON Object Writer
 

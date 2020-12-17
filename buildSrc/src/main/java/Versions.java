@@ -5,4 +5,5 @@ public interface Versions {
     String mockito = "3.5.13";
     String springboot = "2.3.4.RELEASE";
     String gson = "2.8.6";
+    String json_api = "1.1.4";
 }
