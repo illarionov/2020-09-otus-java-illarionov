@@ -10,12 +10,16 @@ dependencies {
 //    api platform('org.springframework.boot:spring-boot-dependencies:2.3.4.RELEASE')
     api platform("org.junit:junit-bom:${Versions.junit}")
     constraints {
+        api "ch.qos.logback:logback-classic:${Versions.logback}"
+        api "com.google.code.gson:gson:${Versions.gson}"
         api "com.google.guava:guava:${Versions.guava}"
+        api "com.zaxxer:HikariCP:${Versions.hikariCP}"
+        api "javax.json:javax.json-api:${Versions.json_api}"
+        api "org.assertj:assertj-core:${Versions.assertj}"
+        api "org.flywaydb:flyway-core:${Versions.flyway}"
+        api "org.glassfish:javax.json:${Versions.json_api}"
         api "org.mockito:mockito-core:${Versions.mockito}"
         api "org.mockito:mockito-junit-jupiter:${Versions.mockito}"
-        api "org.assertj:assertj-core:${Versions.assertj}"
-        api "com.google.code.gson:gson:${Versions.gson}"
-        api "javax.json:javax.json-api:${Versions.json_api}"
-        api "org.glassfish:javax.json:${Versions.json_api}"
+        api "org.postgresql:postgresql:${Versions.postgresql}"
     }
 }
