@@ -1,9 +1,13 @@
 public interface Versions {
-    String guava = "29.0-jre";
-    String junit = "5.7.0";
     String assertj = "3.17.2";
-    String mockito = "3.5.13";
-    String springboot = "2.3.4.RELEASE";
+    String flyway = "7.3.2";
     String gson = "2.8.6";
+    String guava = "29.0-jre";
+    String hikariCP = "3.4.5";
     String json_api = "1.1.4";
+    String junit = "5.7.0";
+    String logback = "1.3.0-alpha5";
+    String mockito = "3.5.13";
+    String postgresql = "42.2.18";
+    String springboot = "2.3.4.RELEASE";
 }
