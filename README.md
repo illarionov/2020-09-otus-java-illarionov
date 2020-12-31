@@ -17,4 +17,5 @@
  * [/hw07-todo](hw07-todo/) обработчик сообщений
  * [/hw08-json](hw08-json/) свой JSON Object Writer
  * [/hw09-jdbc](hw09-jdbc/) свой ORM на основе JDBC 
+ * [/hw10-hibernate](hw10-hibernate/) использование Hibernate
 
