@@ -18,4 +18,6 @@
  * [/hw08-json](hw08-json/) свой JSON Object Writer
  * [/hw09-jdbc](hw09-jdbc/) свой ORM на основе JDBC 
  * [/hw10-hibernate](hw10-hibernate/) использование Hibernate
+ * [/hw11-diycache](hw11-diycache/) cвой cache engine
+
 
