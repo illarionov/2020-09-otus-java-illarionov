@@ -10,6 +10,7 @@ dependencies {
 //    api platform('org.springframework.boot:spring-boot-dependencies:2.3.4.RELEASE')
     api platform("org.junit:junit-bom:${Versions.junit}")
     api platform("org.testcontainers:testcontainers-bom:${Versions.testcontainers}")
+    api platform("org.eclipse.jetty:jetty-bom:${Versions.jetty}")
 
     constraints {
         api "ch.qos.logback:logback-classic:${Versions.logback}"
@@ -19,6 +20,7 @@ dependencies {
         api "javax.json:javax.json-api:${Versions.json_api}"
         api "org.assertj:assertj-core:${Versions.assertj}"
         api "org.flywaydb:flyway-core:${Versions.flyway}"
+        api "org.freemarker:freemarker:${Versions.freemaker}"
         api "org.glassfish:javax.json:${Versions.json_api}"
         api "org.hibernate:hibernate-core:${Versions.hibernate}"
         api "org.hibernate:hibernate-hikaricp:${Versions.hibernate}"

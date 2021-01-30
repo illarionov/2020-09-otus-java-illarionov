@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow"
+}
+
+group 'ru.otus'
+
+java {
+    archivesBaseName = "webserver"
+    sourceCompatibility = JavaVersion.VERSION_15
+    targetCompatibility = JavaVersion.VERSION_15
+}
+
+
+dependencies {
+    implementation 'ch.qos.logback:logback-classic'
+
+    implementation 'org.eclipse.jetty:jetty-servlet'
+    implementation 'org.freemarker:freemarker'
+
+    implementation 'org.hibernate:hibernate-core'
+    implementation 'org.hibernate:hibernate-hikaricp'
+    implementation 'org.flywaydb:flyway-core'
+
+    implementation 'org.postgresql:postgresql'
+    
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params'
+
+    testImplementation 'org.assertj:assertj-core'
+    testImplementation 'org.mockito:mockito-junit-jupiter'
+
+    testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'org.testcontainers:postgresql'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        // events "passed", "skipped", "failed"
+    }
+}
+
+shadowJar {
+    archiveClassifier.set('uber')
+    manifest {
+        attributes 'Main-Class': 'ru.otus.WebServer'
+    }
+}
+
+tasks.assemble.dependsOn tasks.shadowJar

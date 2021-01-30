@@ -1,9 +1,11 @@
 public interface Versions {
     String assertj = "3.17.2";
     String flyway = "7.3.2";
+    String freemaker = "2.3.30";
     String gson = "2.8.6";
     String guava = "29.0-jre";
     String hikariCP = "3.4.5";
+    String jetty = "11.0.0";
     String json_api = "1.1.4";
     String junit = "5.7.0";
     String hibernate = "5.4.27.Final";
