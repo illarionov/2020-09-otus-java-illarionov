@@ -19,6 +19,13 @@ dependencies {
         api "com.zaxxer:HikariCP:${Versions.hikariCP}"
         api "javax.json:javax.json-api:${Versions.json_api}"
         api "org.assertj:assertj-core:${Versions.assertj}"
+        api("org.reflections:reflections") {
+            version {
+                require(Versions.reflections)
+                reject("0.9.12")
+                because("https://github.com/ronmamo/reflections/issues/273")
+            }
+        }
         api "org.flywaydb:flyway-core:${Versions.flyway}"
         api "org.freemarker:freemarker:${Versions.freemaker}"
         api "org.glassfish:javax.json:${Versions.json_api}"
