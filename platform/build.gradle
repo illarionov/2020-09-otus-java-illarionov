@@ -8,9 +8,10 @@ javaPlatform {
 
 dependencies {
 //    api platform('org.springframework.boot:spring-boot-dependencies:2.3.4.RELEASE')
-    api platform("org.junit:junit-bom:${Versions.junit}")
-    api platform("org.testcontainers:testcontainers-bom:${Versions.testcontainers}")
     api platform("org.eclipse.jetty:jetty-bom:${Versions.jetty}")
+    api platform("org.junit:junit-bom:${Versions.junit}")
+    api platform("org.springframework:spring-framework-bom:${Versions.spring_framework}")
+    api platform("org.testcontainers:testcontainers-bom:${Versions.testcontainers}")
 
     constraints {
         api "ch.qos.logback:logback-classic:${Versions.logback}"
@@ -18,6 +19,8 @@ dependencies {
         api "com.google.guava:guava:${Versions.guava}"
         api "com.zaxxer:HikariCP:${Versions.hikariCP}"
         api "javax.json:javax.json-api:${Versions.json_api}"
+        api "javax.servlet:javax.servlet-api:${Versions.javax_servlet}"
+        api "javax.validation:validation-api:${Versions.javax_validation_api}"
         api "org.assertj:assertj-core:${Versions.assertj}"
         api("org.reflections:reflections") {
             version {
@@ -29,10 +32,16 @@ dependencies {
         api "org.flywaydb:flyway-core:${Versions.flyway}"
         api "org.freemarker:freemarker:${Versions.freemaker}"
         api "org.glassfish:javax.json:${Versions.json_api}"
+        api "org.hibernate.validator:hibernate-validator:${Versions.hibernate_validator}"
         api "org.hibernate:hibernate-core:${Versions.hibernate}"
         api "org.hibernate:hibernate-hikaricp:${Versions.hibernate}"
+        api "org.javassist:javassist:${Versions.javassist}"
         api "org.mockito:mockito-core:${Versions.mockito}"
         api "org.mockito:mockito-junit-jupiter:${Versions.mockito}"
         api "org.postgresql:postgresql:${Versions.postgresql}"
+        api "org.thymeleaf:thymeleaf:${Versions.thymeleaf}"
+        api "org.thymeleaf:thymeleaf-spring5:${Versions.thymeleaf}"
+        api "org.thymeleaf:thymeleaf-testing:${Versions.thymeleaf}"
+        api "org.thymeleaf:thymeleaf-extras-java8time:${Versions.thymeleaf}"
     }
 }

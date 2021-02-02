@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Пользователи</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/style.css}">
+    <style>
+        table.user th, td {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+<div th:replace="~{includeMainMenu :: mainmenu}"></div>
+
+<h2>Страница пользователя</h2>
+
+<table class="user">
+    <tr>
+        <th>Id:</th>
+        <td th:text="${user.id}">1</td>
+    </tr>
+    <tr>
+        <th>Логин:</th>
+        <td th:text="${user.login}">admin</td>
+    </tr>
+    <tr>
+        <th>Пароль:</th>
+        <td th:text="${user.password}">12345</td>
+    </tr>
+    <tr>
+        <th>Роль:</th>
+        <td th:switch="${user.role.name}">
+            <th:block th:case="ADMIN">Администратор</th:block>
+            <th:block th:case="USER">Пользователь</th:block>
+        </td>
+    </tr>
+    <tr>
+        <th>Имя:</th>
+        <td th:text="${user.name}">Иван</td>
+    </tr>
+    <tr>
+        <th>Возраст:</th>
+        <td th:text="${user.age} ?: 'Не указан'">1</td>
+    </tr>
+    <tr>
+        <th>Адрес:</th>
+        <td th:text="${user.address?.street} ?: ''">улица Петрова</td>
+    </tr>
+    <tr>
+        <th>Телефоны:</th>
+        <td th:utext="${#strings.listJoin(user.phones.![#strings.escapeXml(number)], '<br/>')}">12345</td>
+    </tr>
+</table>
+
