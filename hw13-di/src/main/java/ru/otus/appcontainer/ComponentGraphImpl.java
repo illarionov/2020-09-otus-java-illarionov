@@ -35,7 +35,7 @@ class ComponentGraphImpl implements ComponentGraph {
     }
 
     @Override
-    public <T> ComponentFactoryImpl<T> getFactory(String name) {
+    public <T> ComponentFactory<T> getFactory(String name) {
         //noinspection unchecked
         return (ComponentFactoryImpl<T>) factoriesByName.get(name);
     }
