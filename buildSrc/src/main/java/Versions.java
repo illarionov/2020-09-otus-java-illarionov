@@ -8,6 +8,7 @@ public interface Versions {
     String jetty = "11.0.0";
     String json_api = "1.1.4";
     String junit = "5.7.0";
+    String reflections = "0.9.11";
     String hibernate = "5.4.27.Final";
     String logback = "1.3.0-alpha5";
     String mockito = "3.5.13";
