@@ -21,5 +21,6 @@
  * [/hw11-diycache](hw11-diycache/) cвой cache engine
  * [/hw12-webserver](hw12-webserver/) web server
  * [/hw13-di](hw13-di/) dependency injection и собственный IoC контейнер
+ * [/hw15-executors](hw15-executors/) последовательность чисел
 
 
