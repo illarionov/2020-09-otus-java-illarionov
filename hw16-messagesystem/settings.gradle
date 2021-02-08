@@ -1,0 +1,5 @@
+rootProject.name = 'hw16-messagesystem'
+includeBuild '../platform'
+
+include 'MessageSystem'
+include 'app'

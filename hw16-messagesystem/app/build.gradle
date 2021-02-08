@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot'
+    id 'org.springframework.boot' version "2.4.3"
     id 'war'
     id 'java'
 }
@@ -14,10 +14,10 @@ java {
 }
 
 dependencies {
-    providedRuntime platform(project(':platform'))
-    developmentOnly platform(project(':platform'))
+    providedRuntime platform('ru.otus:platform')
+    developmentOnly platform('ru.otus:platform')
 
-    implementation project(':hw16-messagesystem:MessageSystem')
+    implementation project(':MessageSystem')
     implementation 'ch.qos.logback:logback-classic'
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'

@@ -1,0 +1,15 @@
+allprojects {
+    group 'ru.x0xdc.otus.java'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    plugins.withType(JavaPlugin) { plugin ->
+        dependencies {
+            implementation platform('ru.otus:platform')
+        }
+    }
+}

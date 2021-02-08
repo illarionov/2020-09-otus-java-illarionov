@@ -28,7 +28,7 @@ dependencies {
     
     implementation 'org.thymeleaf:thymeleaf'
     implementation 'org.thymeleaf:thymeleaf-spring5'
-    providedCompile "javax.servlet:javax.servlet-api:${Versions.javax_servlet}"
+    providedCompile "javax.servlet:javax.servlet-api:4.0.1"
 
     runtimeOnly 'org.postgresql:postgresql'
     

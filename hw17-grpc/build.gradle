@@ -46,12 +46,12 @@ test {
 
 protobuf {
     protoc {
-        artifact = "com.google.protobuf:protoc:${Versions.protocVersion}"
+        artifact = "com.google.protobuf:protoc:3.15.2"
     }
 
     plugins {
         grpc {
-            artifact = "io.grpc:protoc-gen-grpc-java:${Versions.grpcVersion}"
+            artifact = "io.grpc:protoc-gen-grpc-java:1.36.0"
         }
     }
 
