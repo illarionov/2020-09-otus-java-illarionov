@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,24 +16,32 @@ import ru.otus.core.service.DBServiceUser;
 import ru.otus.core.service.DbServiceException;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
-public class CreateUserController {
+public class AdminUserController {
     private static final String TEMPLATE_CREATE_USER = "admin/userCreate.html";
-    private static final String ATTRIBUTE_USER_FORM = "user";
-    private static final String ATTRIBUTE_ERRORS = "errors";
+    private static final String TEMPLATE_ADMIN_USER_LIST = "admin/userList.html";
 
-    private static final Logger logger = LoggerFactory.getLogger(CreateUserController.class);
-    
+    private static final Logger logger = LoggerFactory.getLogger(AdminUserController.class);
+
     private final DBServiceUser userService;
 
     @Autowired
-    public CreateUserController(DBServiceUser userService) {
+    public AdminUserController(DBServiceUser userService) {
         this.userService = userService;
     }
 
+    @GetMapping("/admin")
+    public String userListView(Model model) {
+        List<User> users = userService.findAllUsers();
+
+        model.addAttribute("users", users);
+        return TEMPLATE_ADMIN_USER_LIST;
+    }
+
     @GetMapping("/admin/user/create")
-    public String getCreateUserForm(@ModelAttribute("user") UserForm user) {
+    public String createUserFormView(@ModelAttribute("user") UserForm user) {
         return TEMPLATE_CREATE_USER;
     }
 
