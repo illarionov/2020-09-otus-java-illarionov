@@ -2,6 +2,7 @@ package ru.otus.config;
 
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 import ru.otus.core.dao.UserDao;
@@ -14,6 +15,7 @@ import ru.otus.hibernate.sessionmanager.SessionManagerHibernate;
 import ru.otus.utils.MigrationsExecutorFlyway;
 
 @Configuration
+@ComponentScan(basePackages = {"ru.otus.core", "ru.otus.hibernate", "ru.otus.utils"} )
 public class RootConfig {
     
     @Bean
@@ -33,21 +35,6 @@ public class RootConfig {
                 .setHibernateConfigFile("/hibernate.cfg.xml")
                 .setDatabaseConfiguration(databaseConfiguration)
                 .build();
-    }
-
-    @Bean
-    SessionManagerHibernate sessionManager(SessionFactory sessionFactory) {
-        return new SessionManagerHibernate(sessionFactory);
-    }
-
-    @Bean
-    UserDao userDao(SessionManagerHibernate sessionManager) {
-        return new UserDaoHibernate(sessionManager);
-    }
-
-    @Bean
-    DBServiceUser userService(UserDao userDao) {
-        return new DbServiceUserImpl(userDao);
     }
 
 }
