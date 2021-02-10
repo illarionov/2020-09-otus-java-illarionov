@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Error view</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/style.css}">
+    <style th:inline="css">
+        h3 {
+            background: url([[@{/static/img/listmark.png}]]) no-repeat;
+            padding: 2px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div th:replace="~{includeMainMenu :: mainmenu}"></div>
+
+<h3>Опс! Не найдено...</h3>
+<pre th:text="${error}"></pre>
+<a th:href="@{/}">На главную</a>
+
+</body>
+</html>

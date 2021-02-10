@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Пользователи</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/style.css}">
+</head>
+
+<body>
+
+<div th:replace="~{includeMainMenu :: mainmenu}"></div>
+
+<h2>Страница администратора</h2>
+
+<h3>Пользователи</h3>
+<div>
+    <a th:href="@{/admin/user/create}">Добавить пользователя</a>
+</div>
+<br/>
+
+<table>
+    <thead>
+    <tr>
+        <td style="width: 50px">Id</td>
+        <td style="width: 100px">Логин</td>
+        <td style="width: 100px">Пароль</td>
+        <td style="width: 100px">Роль</td>
+        <td style="width: 150px">Имя</td>
+        <td style="width: 150px">Возраст</td>
+        <td style="width: 150px">Адрес</td>
+        <td style="width: 200px">Телефоны</td>
+    </tr>
+    </thead>
+    <tbody>
+        <tr th:each="user: ${users}">
+            <td><a th:href="@{/user/{userId}(userId=${user.id})}" th:text="${user.id}">1</a></td>
+            <td th:text="${user.login}">${user.login}</td>
+            <td th:text="${user.password}">${user.password}</td>
+            <td th:switch="${user.role.name}">
+                <th:block th:case="ADMIN">Администратор</th:block>
+                <th:block th:case="USER">Пользователь</th:block>
+            </td>
+            <td nowrap th:text="${user.name}">${user.name}</td>
+            <td nowrap th:text="${user.age} ?: 'Не указан'">5</td>
+            <td nowrap th:text="${user.address?.street} ?: ''">улица Пирогова</td>
+            <td th:utext="${#strings.listJoin(user.phones.![#strings.escapeXml(number)], '<br/>')}">12345</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
