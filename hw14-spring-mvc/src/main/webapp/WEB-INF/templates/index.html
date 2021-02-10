@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/style.css}">
+</head>
+<body>
+
+<div th:replace="~{includeMainMenu :: mainmenu}"></div>
+
+<div class="top">
+    <img th:src="@{/static/img/logo.svg}" style="width: 300px; height: 300px">
+    <br/>
+    <h3>Добро пожаловать на стартовую страницу</h3>
+    <ul>
+        <li><a th:href="@{/admin}">Страница администратора</a></li>
+        <li><a th:href="@{/user}">Страница пользователя</a></li>
+    </ul>
+</div>
+</body>
+</html>

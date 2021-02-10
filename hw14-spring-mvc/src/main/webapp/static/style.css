@@ -1,0 +1,51 @@
+ul#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul#menu li {
+    float: left;
+}
+
+ul#menu li.menu_right {
+    float: right;
+}
+
+ul#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+ul#menu li a:hover {
+    background-color: #111111;
+}
+
+ul#menu li form {
+    display: block;
+    padding: 0;
+    margin-block-end: auto;
+}
+
+ul#menu li form input[type=submit] {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+ul#menu li form input[type=submit]:hover {
+    background-color: #111111;
+}

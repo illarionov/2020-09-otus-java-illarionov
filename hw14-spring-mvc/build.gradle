@@ -1,0 +1,48 @@
+plugins {
+    id 'war'
+}
+
+group 'ru.otus'
+
+war {
+    archivesBaseName = "springmvc"
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+dependencies {
+    implementation 'ch.qos.logback:logback-classic'
+
+    implementation 'org.hibernate:hibernate-core'
+    runtimeOnly 'org.hibernate:hibernate-hikaricp'
+    implementation 'org.flywaydb:flyway-core'
+
+    implementation 'org.javassist:javassist'
+
+    implementation 'org.springframework:spring-context'
+    implementation 'org.springframework:spring-webmvc'
+    implementation 'org.springframework:spring-web'
+
+    implementation 'javax.validation:validation-api'
+    runtimeOnly 'org.hibernate.validator:hibernate-validator'
+    
+    implementation 'org.thymeleaf:thymeleaf'
+    implementation 'org.thymeleaf:thymeleaf-spring5'
+    providedCompile "javax.servlet:javax.servlet-api:${Versions.javax_servlet}"
+
+    runtimeOnly 'org.postgresql:postgresql'
+    
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params'
+
+    testImplementation 'org.assertj:assertj-core'
+    testImplementation 'org.mockito:mockito-junit-jupiter'
+    testImplementation 'org.springframework:spring-test'
+    testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'org.testcontainers:postgresql'
+}
+
+test {
+    useJUnitPlatform()
+}
