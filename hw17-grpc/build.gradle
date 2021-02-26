@@ -1,0 +1,93 @@
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow'
+    id "com.google.protobuf" version "0.8.15"
+}
+
+group 'ru.x0xdc.otus.java.grpc'
+version = "0.1"
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_15
+    targetCompatibility = JavaVersion.VERSION_15
+}
+
+dependencies {
+    implementation 'ch.qos.logback:logback-classic'
+
+    implementation 'io.grpc:grpc-netty'
+    implementation 'io.grpc:grpc-protobuf'
+    implementation 'io.grpc:grpc-stub'
+    compileOnly    'javax.annotation:javax.annotation-api'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params'
+    testImplementation 'org.jmock:jmock-junit5'
+
+    testImplementation 'junit:junit'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine'
+
+    testImplementation 'org.assertj:assertj-core'
+    testImplementation 'org.mockito:mockito-core'
+    testImplementation 'org.mockito:mockito-junit-jupiter'
+    testImplementation 'io.grpc:grpc-testing'
+}
+
+test {
+    useJUnitPlatform() {
+    }
+    testLogging {
+        // events "passed", "skipped", "failed"
+    }
+}
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:${Versions.protocVersion}"
+    }
+
+    plugins {
+        grpc {
+            artifact = "io.grpc:protoc-gen-grpc-java:${Versions.grpcVersion}"
+        }
+    }
+
+    generateProtoTasks {
+        ofSourceSet('main')*.plugins { grpc {} }
+    }
+}
+
+// Inform IDEs like IntelliJ IDEA, Eclipse or NetBeans about the generated code.
+sourceSets {
+    main {
+        java {
+            srcDirs 'build/generated/source/proto/main/grpc'
+            srcDirs 'build/generated/source/proto/main/java'
+        }
+    }
+}
+
+task clientJar(type: ShadowJar) {
+    group 'shadow'
+    archiveBaseName.set('client')
+    from(project.convention.getPlugin(JavaPluginConvention).sourceSets.main.output)
+    configurations = [ project.configurations.runtimeClasspath ]
+    manifest {
+        attributes 'Main-Class': 'ru.x0xdc.otus.java.grpc.Client'
+    }
+}
+
+task serverJar(type: ShadowJar) {
+    group 'shadow'
+    archiveBaseName.set('server')
+    from(project.convention.getPlugin(JavaPluginConvention).sourceSets.main.output)
+    configurations = [ project.configurations.runtimeClasspath ]
+    manifest {
+        attributes 'Main-Class': 'ru.x0xdc.otus.java.grpc.Server'
+    }
+}
+
+tasks.build.dependsOn tasks.clientJar, tasks.serverJar

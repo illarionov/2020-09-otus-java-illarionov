@@ -23,3 +23,4 @@
  * [/hw13-di](hw13-di/) dependency injection и собственный IoC контейнер
  * [/hw14-spring-mvc](hw14-spring-mvc/) веб-приложение на Spring MVC
  * [/hw15-executors](hw15-executors/) последовательность чисел
+ * [/hw17-grpc](hw17-grpc/) GRPC клиент-серверное приложение или "Убить босса"
