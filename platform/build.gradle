@@ -7,14 +7,14 @@ javaPlatform {
 }
 
 dependencies {
-//    api platform('org.springframework.boot:spring-boot-dependencies:2.3.4.RELEASE')
+    api platform("org.springframework.boot:spring-boot-dependencies:${Versions.springboot}")
     api platform("org.eclipse.jetty:jetty-bom:${Versions.jetty}")
     api platform("org.junit:junit-bom:${Versions.junit}")
-    api platform("org.springframework:spring-framework-bom:${Versions.spring_framework}")
+    //api platform("org.springframework:spring-framework-bom:${Versions.spring_framework}")
     api platform("org.testcontainers:testcontainers-bom:${Versions.testcontainers}")
 
     constraints {
-        api "ch.qos.logback:logback-classic:${Versions.logback}"
+        //api "ch.qos.logback:logback-classic:${Versions.logback}"
         api "com.google.code.gson:gson:${Versions.gson}"
         api "com.google.guava:guava:${Versions.guava}"
         api "com.zaxxer:HikariCP:${Versions.hikariCP}"
@@ -39,9 +39,14 @@ dependencies {
         api "org.mockito:mockito-core:${Versions.mockito}"
         api "org.mockito:mockito-junit-jupiter:${Versions.mockito}"
         api "org.postgresql:postgresql:${Versions.postgresql}"
+        api "org.slf4j:slf4j-api:${Versions.slf4j_api_version}"
         api "org.thymeleaf:thymeleaf:${Versions.thymeleaf}"
         api "org.thymeleaf:thymeleaf-spring5:${Versions.thymeleaf}"
         api "org.thymeleaf:thymeleaf-testing:${Versions.thymeleaf}"
         api "org.thymeleaf:thymeleaf-extras-java8time:${Versions.thymeleaf}"
+        api "org.webjars:bootstrap:${Versions.webjars_bootstrap}"
+        api "org.webjars:jquery:${Versions.webjars_jquery}"
+        api "org.webjars:sockjs-client:${Versions.webjars_sockjs_client}"
+        api "org.webjars:stomp-websocket:${Versions.webjars_stomp_websocket}"
     }
 }
