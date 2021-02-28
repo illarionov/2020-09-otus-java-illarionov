@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Пользователи</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/sockjs-client/sockjs.min.js}"></script>
+    <script th:src="@{/webjars/stomp-websocket/stomp.min.js}"></script>
+    <script id="userList_js" th:src="@{/userList.js}" th:attr="contextPath=@{/}"></script>
+</head>
+
+<body>
+
+<div th:replace="~{includeMainMenu :: mainmenu}"></div>
+
+<h2>Страница администратора</h2>
+
+<div th:replace="~{includeNoScriptMessage :: noJavascriptError}"></div>
+<div class="error"></div>
+
+<h3>Пользователи</h3>
+<div>
+    <a th:href="@{/admin/user/create}">Добавить пользователя</a>
+</div>
+<br/>
+
+<button id="refreshUserList">Обновить</button>
+
+<table th:id="userList">
+    <thead>
+    <tr>
+        <td style="width: 50px">Id</td>
+        <td style="width: 100px">Логин</td>
+        <td style="width: 100px">Пароль</td>
+        <td style="width: 100px">Роль</td>
+        <td style="width: 150px">Имя</td>
+        <td style="width: 150px">Возраст</td>
+        <td style="width: 150px">Адрес</td>
+        <td style="width: 200px">Телефоны</td>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+
+</body>
+</html>

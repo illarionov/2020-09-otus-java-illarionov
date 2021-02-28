@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Создать пользователя</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/form.css}">
+
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/sockjs-client/sockjs.min.js}"></script>
+    <script th:src="@{/webjars/stomp-websocket/stomp.min.js}"></script>
+    <script id="userCreate_js" th:src="@{/userCreate.js}" th:attr="contextPath=@{/}"></script>
+</head>
+
+<body>
+
+<div th:replace="~{includeMainMenu :: mainmenu}"></div>
+
+<h2>Страница администратора</h2>
+
+<h3>Создать пользователя</h3>
+
+<div th:replace="~{includeNoScriptMessage :: noJavascriptError}"></div>
+
+<ul id="errors" class="error"></ul>
+
+<div id="messages" class="messages"></div>
+
+<form action="#" method="post">
+    <ul class="form-style-1">
+        <li>
+            <label for="login">Логин<span class="required">*</span></label>
+            <input type="text" id="login" name="login" class="field-long" th:value="${user.login}" value="User">
+        </li>
+
+        <li>
+            <label for="password">Пароль<span class="required">*</span></label>
+            <input type="password" id="password" name="password" class="field-long" th:value="${user.password}">
+        </li>
+
+        <li>
+            <label for="role">Роль</label>
+            <select id="role" name="role" class="field-select">
+                <option value="USER" th:selected="${user.role == T(ru.x0xdc.otus.java.messagesystem.core.model.Role).USER}">Пользователь</option>
+                <option value="ADMIN" th:selected="${user.role == T(ru.x0xdc.otus.java.messagesystem.core.model.Role).ADMIN}">Администратор</option>
+            </select>
+        </li>
+
+        <li>
+            <label for="name">Имя<span class="required">*</span></label>
+            <input type="text" id="name" name="name" class="field-long" th:value="${user.name}">
+        </li>
+
+        <li>
+            <label for="age">Возраст</label>
+            <input type="text" id="age" name="age" class="field-long" th:value="${user.age}">
+        </li>
+
+        <li>
+            <label for="address">Адрес</label>
+            <input type="text" id="address" name="address" class="field-long" th:value="${user.address}">
+        </li>
+
+        <li>
+            <label for="phone">Телефон</label>
+            <input type="text" id="phone" name="phone" class="field-long" th:value="${user.phone}">
+        </li>
+
+        <li>
+            <input type="submit" id="submit" value="Создать">
+        </li>
+    </ul>
+</form>
+</body>
+</html>

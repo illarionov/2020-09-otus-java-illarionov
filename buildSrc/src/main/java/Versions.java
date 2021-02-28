@@ -19,10 +19,15 @@ public interface Versions {
     String logback = "1.3.0-alpha5";
     String mockito = "3.5.13";
     String postgresql = "42.2.18";
-    String springboot = "2.3.4.RELEASE";
+    String springboot = "2.4.2";
+    String slf4j_api_version = "1.7.30";
     String spring_framework = "5.3.3";
     String testcontainers = "1.15.1";
     String thymeleaf = "3.0.12.RELEASE";
+    String webjars_bootstrap = "4.6.0";
+    String webjars_jquery = "3.5.1";
+    String webjars_sockjs_client = "1.1.2";
+    String webjars_stomp_websocket = "2.3.3-1";
 
     String grpcVersion = "1.36.0";
     String protobufVersion = "3.15.2";

@@ -24,3 +24,4 @@
  * [/hw14-spring-mvc](hw14-spring-mvc/) веб-приложение на Spring MVC
  * [/hw15-executors](hw15-executors/) последовательность чисел
  * [/hw17-grpc](hw17-grpc/) GRPC клиент-серверное приложение или "Убить босса"
+ * [/hw16-messagesystem](hw16-messagesystem/) message system
